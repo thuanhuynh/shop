@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Dec 11, 2016 at 04:51 AM
+-- Generation Time: Dec 11, 2016 at 05:51 PM
 -- Server version: 5.6.33
 -- PHP Version: 7.0.12
 
@@ -324,16 +324,15 @@ CREATE TABLE `oc_banner_image` (
 --
 
 INSERT INTO `oc_banner_image` (`banner_image_id`, `banner_id`, `link`, `image`, `sort_order`) VALUES
-(79, 7, 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/demo/banners/iPhone6.jpg', 0),
-(87, 6, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/demo/compaq_presario.jpg', 0),
-(80, 7, '', 'catalog/demo/banners/MacBookAir.jpg', 0),
-(146, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/demo/manufacturer/1.jpg', 0),
-(145, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/demo/manufacturer/2.jpg', 0),
-(144, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/demo/manufacturer/3.jpg', 0),
-(143, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/demo/manufacturer/4.jpg', 0),
-(142, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/demo/manufacturer/5.jpg', 0),
-(141, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/demo/manufacturer/6.jpg', 0),
-(140, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/shimano.png', 0);
+(155, 6, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'catalog/can_ca_ca_banner.jpeg', 0),
+(153, 7, 'index.php?route=product/product&amp;path=57&amp;product_id=49', 'catalog/can_ca_ca_banner.jpeg', 0),
+(152, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/Manufacturers/Shimano_logo.jpg', 0),
+(151, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/Manufacturers/pinnacle-fishing_logo.jpg', 0),
+(150, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/Manufacturers/pflueger.jpg', 0),
+(149, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/Manufacturers/penn.jpg', 0),
+(148, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/Manufacturers/okuma.jpg', 0),
+(147, 8, 'index.php?route=product/manufacturer/info&amp;manufacturer_id=8', 'catalog/Manufacturers/daiwa.jpg', 0),
+(154, 7, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -353,26 +352,24 @@ CREATE TABLE `oc_banner_image_description` (
 --
 
 INSERT INTO `oc_banner_image_description` (`banner_image_id`, `language_id`, `banner_id`, `title`) VALUES
-(79, 1, 7, 'iPhone 6'),
-(87, 1, 6, 'HP Banner'),
-(80, 1, 7, 'MacBookAir'),
-(145, 3, 8, 'Sony'),
-(145, 1, 8, 'Sony'),
-(144, 3, 8, 'RedBull'),
-(144, 1, 8, 'RedBull'),
-(143, 3, 8, 'NFL'),
-(143, 1, 8, 'NFL'),
-(80, 3, 7, 'MacBookAir'),
-(142, 3, 8, 'Burger King'),
-(87, 3, 6, 'HP Banner'),
-(142, 1, 8, 'Burger King'),
-(79, 3, 7, 'iPhone 6'),
-(141, 3, 8, 'Canon'),
-(141, 1, 8, 'Canon'),
-(140, 3, 8, 'Shimano'),
-(140, 1, 8, 'Shimano'),
-(146, 1, 8, 'Coca Cola'),
-(146, 3, 8, 'Coca Cola');
+(154, 1, 7, 'MacBookAir'),
+(155, 1, 6, 'HP Banner'),
+(154, 3, 7, 'MacBookAir'),
+(152, 1, 8, 'Shimano'),
+(152, 3, 8, 'Shimano'),
+(151, 1, 8, 'Pinnacle'),
+(151, 3, 8, 'Pinnacle'),
+(153, 1, 7, 'iPhone 6'),
+(150, 1, 8, 'Pflueger'),
+(155, 3, 6, 'HP Banner'),
+(150, 3, 8, 'Pflueger'),
+(153, 3, 7, 'iPhone 6'),
+(149, 1, 8, 'Penn'),
+(149, 3, 8, 'Penn'),
+(148, 1, 8, 'Okuma'),
+(148, 3, 8, 'Okuma'),
+(147, 1, 8, 'Daiwa'),
+(147, 3, 8, 'Daiwa');
 
 -- --------------------------------------------------------
 
@@ -397,15 +394,13 @@ CREATE TABLE `oc_category` (
 --
 
 INSERT INTO `oc_category` (`category_id`, `image`, `parent_id`, `top`, `column`, `sort_order`, `status`, `date_added`, `date_modified`) VALUES
-(77, '', 0, 0, 1, 0, 1, '2016-12-11 10:13:48', '2016-12-11 10:13:48'),
+(77, 'catalog/Graphics/may_cau.jpg', 0, 0, 1, 0, 1, '2016-12-11 10:13:48', '2016-12-11 23:25:27'),
 (33, 'catalog/demo/product/category.jpg', 0, 1, 1, 6, 1, '2009-02-03 14:17:55', '2016-12-11 10:02:36'),
-(64, '', 33, 0, 1, 0, 1, '2015-06-25 11:29:27', '2015-06-25 11:29:27'),
-(65, '', 33, 0, 1, 0, 1, '2015-06-25 11:29:50', '2015-06-25 11:46:59'),
-(66, '', 33, 0, 1, 0, 1, '2015-06-25 11:30:19', '2016-12-11 10:14:52'),
-(67, '', 33, 0, 1, 0, 1, '2015-06-25 11:31:07', '2015-06-25 11:31:07'),
-(68, '', 33, 0, 1, 0, 1, '2015-06-25 11:31:35', '2016-12-11 10:14:21'),
-(75, '', 0, 0, 1, 0, 1, '2016-12-11 10:07:42', '2016-12-11 10:07:42'),
-(76, '', 0, 0, 1, 0, 1, '2016-12-11 10:12:09', '2016-12-11 10:12:09');
+(66, 'catalog/Graphics/phao.jpg', 33, 0, 1, 0, 1, '2015-06-25 11:30:19', '2016-12-11 23:27:33'),
+(68, 'catalog/Graphics/phu kien cau ca.jpg', 33, 0, 1, 0, 1, '2015-06-25 11:31:35', '2016-12-11 23:24:51'),
+(75, 'catalog/Graphics/can cau.jpg', 0, 0, 1, 0, 1, '2016-12-11 10:07:42', '2016-12-11 23:25:16'),
+(76, 'catalog/Graphics/moi_cau.jpg', 0, 0, 1, 0, 1, '2016-12-11 10:12:09', '2016-12-11 23:24:34'),
+(78, 'catalog/Graphics/cuoc.jpg', 33, 0, 1, 0, 1, '2016-12-11 23:26:07', '2016-12-11 23:26:16');
 
 -- --------------------------------------------------------
 
@@ -428,20 +423,16 @@ CREATE TABLE `oc_category_description` (
 --
 
 INSERT INTO `oc_category_description` (`category_id`, `language_id`, `name`, `description`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
-(64, 3, 'Women', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', ''),
 (66, 3, 'Phao', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Phao', '', ''),
-(67, 3, 'Watches', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', ''),
+(78, 1, 'Fishing Line', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Fishing Line', '', ''),
 (68, 3, 'Phụ Kiện', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Phụ Kiện', '', ''),
 (68, 1, 'Accessories', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Accessories', '', ''),
 (33, 1, 'Fishing Equipment', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Fishing Equipment', '', ''),
-(64, 1, 'Women', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Women', '', ''),
 (66, 1, 'Floating', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Floating', '', ''),
-(67, 1, 'Watches', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Watches', '', ''),
+(78, 3, 'Cước', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Cước', '', ''),
 (77, 3, 'Máy Câu', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Máy Câu', '', ''),
 (77, 1, 'Fishing Reel', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Fishing Reel', '', ''),
 (33, 3, 'Đồ Câu', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Đồ Câu', '', ''),
-(65, 1, 'Men', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Men', '', ''),
-(65, 3, 'Men', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '', '', ''),
 (75, 3, 'Cần Câu', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Cần Câu', '', ''),
 (75, 1, 'Fishing Pole', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Fishing Pole', '', ''),
 (76, 3, 'Mồi Câu', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 'Mồi Câu', '', ''),
@@ -488,14 +479,10 @@ CREATE TABLE `oc_category_path` (
 INSERT INTO `oc_category_path` (`category_id`, `path_id`, `level`) VALUES
 (77, 77, 0),
 (33, 33, 0),
-(64, 33, 0),
-(64, 64, 1),
-(65, 65, 1),
+(78, 33, 0),
+(78, 78, 1),
 (66, 66, 1),
 (66, 33, 0),
-(65, 33, 0),
-(67, 33, 0),
-(67, 67, 1),
 (68, 33, 0),
 (68, 68, 1),
 (75, 75, 0),
@@ -520,10 +507,8 @@ CREATE TABLE `oc_category_to_layout` (
 INSERT INTO `oc_category_to_layout` (`category_id`, `store_id`, `layout_id`) VALUES
 (77, 0, 0),
 (33, 0, 0),
-(64, 0, 0),
-(65, 0, 0),
+(78, 0, 0),
 (66, 0, 0),
-(67, 0, 0),
 (68, 0, 0),
 (75, 0, 0),
 (76, 0, 0);
@@ -545,14 +530,12 @@ CREATE TABLE `oc_category_to_store` (
 
 INSERT INTO `oc_category_to_store` (`category_id`, `store_id`) VALUES
 (33, 0),
-(64, 0),
-(65, 0),
 (66, 0),
-(67, 0),
 (68, 0),
 (75, 0),
 (76, 0),
-(77, 0);
+(77, 0),
+(78, 0);
 
 -- --------------------------------------------------------
 
@@ -923,7 +906,7 @@ CREATE TABLE `oc_currency` (
 
 INSERT INTO `oc_currency` (`currency_id`, `title`, `code`, `symbol_left`, `symbol_right`, `decimal_place`, `value`, `status`, `date_modified`) VALUES
 (1, 'Pound Sterling', 'GBP', '£', '', '2', 0.79509997, 1, '2016-12-10 18:36:07'),
-(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2016-12-11 04:04:36'),
+(2, 'US Dollar', 'USD', '$', '', '2', 1.00000000, 1, '2016-12-11 11:21:53'),
 (3, 'Euro', 'EUR', '', '€', '2', 0.94660002, 1, '2016-12-10 18:36:07'),
 (4, 'Vietnam Dong', 'VND', '', 'Đ', '', 22584.00000000, 1, '2016-12-10 18:36:07');
 
@@ -1611,27 +1594,25 @@ CREATE TABLE `oc_layout_module` (
 --
 
 INSERT INTO `oc_layout_module` (`layout_module_id`, `layout_id`, `code`, `position`, `sort_order`) VALUES
-(68, 6, 'account', 'column_right', 1),
-(254, 10, 'account', 'column_right', 1),
-(261, 5, 'bestseller.40', 'column_left', 3),
-(718, 3, 'category', 'column_left', 1),
-(260, 5, 'category', 'column_left', 1),
-(259, 5, 'filter', 'column_left', 2),
-(717, 3, 'bestseller.40', 'column_left', 3),
-(788, 1, 'pavreassurance.75', 'footer_center', 0),
-(477, 14, 'bestseller.40', 'column_right', 3),
 (476, 14, 'pavblogcomment.39', 'column_right', 2),
-(475, 14, 'pavblogcategory.36', 'column_right', 1),
-(534, 13, 'category', 'column_left', 1),
 (535, 13, 'bestseller.40', 'column_left', 2),
+(534, 13, 'category', 'column_left', 1),
+(477, 14, 'bestseller.40', 'column_right', 3),
+(254, 10, 'account', 'column_right', 1),
+(68, 6, 'account', 'column_right', 1),
+(717, 3, 'bestseller.40', 'column_left', 3),
+(259, 5, 'filter', 'column_left', 2),
+(260, 5, 'category', 'column_left', 1),
+(718, 3, 'category', 'column_left', 1),
+(838, 1, 'pavreassurance.75', 'footer_center', 0),
+(837, 1, 'pavfooterlink.80', 'footer_top', 2),
+(836, 1, 'pavfooterlink.78', 'footer_top', 1),
+(835, 1, 'pavfooterlink.79', 'footer_top', 0),
+(834, 1, 'pavhomebuilder.59', 'content_top', 0),
+(261, 5, 'bestseller.40', 'column_left', 3),
+(475, 14, 'pavblogcategory.36', 'column_right', 1),
 (592, 15, 'category', 'column_left', 1),
 (593, 15, 'bestseller.40', 'column_left', 2),
-(787, 1, 'pavfooterlink.80', 'footer_top', 4),
-(786, 1, 'pavfooterlink.79', 'footer_top', 3),
-(785, 1, 'pavfooterlink.78', 'footer_top', 2),
-(784, 1, 'pavbloglatest.77', 'footer_top', 1),
-(783, 1, 'pavtestimonial.76', 'footer_top', 0),
-(782, 1, 'pavhomebuilder.59', 'content_top', 0),
 (729, 2, 'bestseller.40', 'column_left', 2),
 (728, 2, 'category', 'column_left', 1);
 
@@ -1656,7 +1637,7 @@ INSERT INTO `oc_layout_route` (`layout_route_id`, `layout_id`, `store_id`, `rout
 (38, 6, 0, 'account/%'),
 (126, 10, 0, 'affiliate/%'),
 (316, 3, 0, 'product/category'),
-(333, 1, 0, 'common/home'),
+(343, 1, 0, 'common/home'),
 (320, 2, 0, 'product/product'),
 (24, 11, 0, 'information/information'),
 (23, 7, 0, 'checkout/%'),
@@ -1751,10 +1732,10 @@ CREATE TABLE `oc_manufacturer` (
 
 INSERT INTO `oc_manufacturer` (`manufacturer_id`, `name`, `image`, `sort_order`) VALUES
 (5, 'HTC', 'catalog/demo/htc_logo.jpg', 0),
-(6, 'Palm', 'catalog/demo/palm_logo.jpg', 0),
+(6, 'Daiwa', 'catalog/Manufacturers/daiwa.jpg', 0),
 (7, 'Hewlett-Packard', 'catalog/demo/hp_logo.jpg', 0),
 (8, 'Shimano', 'catalog/shimano.png', 0),
-(9, 'Canon', 'catalog/demo/canon_logo.jpg', 0),
+(9, 'Penn', 'catalog/Manufacturers/penn.jpg', 0),
 (10, 'Sony', 'catalog/demo/sony_logo.jpg', 0);
 
 -- --------------------------------------------------------
@@ -1841,25 +1822,15 @@ CREATE TABLE `oc_megamenu` (
 --
 
 INSERT INTO `oc_megamenu` (`megamenu_id`, `image`, `parent_id`, `is_group`, `width`, `submenu_width`, `colum_width`, `submenu_colum_width`, `item`, `colums`, `type`, `is_content`, `show_title`, `type_submenu`, `level_depth`, `published`, `store_id`, `position`, `show_sub`, `url`, `target`, `privacy`, `position_type`, `menu_class`, `description`, `content_text`, `submenu_content`, `level`, `left`, `right`, `widget_id`, `badges`) VALUES
-(1, '', 0, 2, '', '', '', '', '', '1', '', 2, 1, '1', 0, 1, 0, 0, 0, '', '', 0, 'top', '', '', '', '', -5, 34, 47, 0, NULL),
-(2, '', 1, 0, '', '', '', 'col1=3, col2=3, col3=6', '20', '3', 'category', 0, 1, 'menu', 0, 1, 0, 2, 0, '', '', 0, 'top', 'bg1', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, ''),
-(19, '', 1, 0, '', '', '', '', '33', '1', 'category', 0, 1, 'menu', 0, 1, 0, 3, 0, '', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(21, '', 19, 0, '', '', '', '', '33', '1', 'category', 0, 1, 'menu', 0, 1, 0, 2, 0, '', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(22, '', 19, 0, '', '', '', '', '33', '1', 'category', 0, 1, 'menu', 0, 1, 0, 1, 0, '', '', 0, 'top', 'pav-menu-child', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(23, '', 19, 0, '', '', '', '', '34', '1', 'category', 0, 1, 'menu', 0, 1, 0, 3, 0, '', '', 0, 'top', 'pav-menu-child', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(25, '', 19, 0, '', '', '', '', '33', '1', 'category', 0, 1, 'menu', 0, 1, 0, 5, 0, '', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(26, '', 29, 0, '', '', '', '', '33', '1', 'category', 0, 1, 'menu', 0, 1, 0, 1, 0, '', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(28, '', 19, 0, '', '', '', '', '33', '1', 'category', 0, 1, 'menu', 0, 1, 0, 4, 0, '', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(29, '', 23, 0, '', '', '', '', '17', '1', 'category', 0, 1, 'menu', 0, 1, 0, 1, 0, '', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(31, '', 29, 0, '', '', '', '', '34', '1', 'category', 0, 1, 'menu', 0, 1, 0, 2, 0, '', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(33, '', 23, 0, '', '', '', '', '20', '1', 'category', 0, 1, 'menu', 0, 1, 0, 2, 0, '', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(35, '', 1, 0, '', '', '', '', '45', '1', 'url', 0, 1, 'menu', 0, 1, 0, 4, 0, 'index.php?route=pavdeals/deals', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, ''),
-(36, '', 1, 0, '', '', '', '', '45', '1', 'url', 0, 1, 'menu', 0, 1, 0, 5, 0, '?route=pavblog/blogs', '', 0, 'top', '', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(43, '', 1, 0, '', '', '', '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 1, 0, '?route=common/home', '', 0, 'top', 'home', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, NULL),
-(51, '', 1, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 6, 0, '?route=information/contact', NULL, 0, 'top', '', NULL, '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, ''),
-(52, '', 43, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 2, 0, '?route=common/home&amp;home_id=89', NULL, 0, 'top', '', NULL, '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, ''),
-(53, '', 43, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 1, 0, '?route=common/home&amp;home_id=83', NULL, 0, 'top', '', NULL, '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, ''),
-(54, '', 1, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 99, 0, '', NULL, 0, 'top', '', NULL, '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, '');
+(68, '', 1, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 99, 0, '', NULL, 0, 'top', '', NULL, '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, ''),
+(69, '', 1, 0, NULL, NULL, NULL, NULL, '77', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(70, '', 1, 0, NULL, NULL, NULL, NULL, '33', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(71, '', 1, 0, NULL, NULL, NULL, NULL, '75', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(72, '', 1, 0, NULL, NULL, NULL, NULL, '76', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(73, '', 70, 0, NULL, NULL, NULL, NULL, '66', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(74, '', 70, 0, NULL, NULL, NULL, NULL, '68', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(75, '', 70, 0, NULL, NULL, NULL, NULL, '78', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(76, '', 1, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 99, 0, '', NULL, 0, 'top', '', NULL, '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 1, '');
 
 -- --------------------------------------------------------
 
@@ -1879,42 +1850,24 @@ CREATE TABLE `oc_megamenu_description` (
 --
 
 INSERT INTO `oc_megamenu_description` (`megamenu_id`, `language_id`, `title`, `description`) VALUES
-(35, 1, 'Deals', ''),
-(36, 2, 'Blog', ''),
-(22, 1, 'Mauris amattis', ''),
-(21, 2, 'Nunc imperdiet', ''),
-(43, 2, 'Home', ''),
-(2, 2, 'Dresses', ''),
-(23, 2, 'Lacus sed iaculis', ''),
-(25, 2, 'Aliquam', ''),
-(26, 2, 'Claritas', ''),
-(28, 2, 'Hendrerit', ''),
-(29, 2, 'Litterarum', ''),
-(19, 2, 'Accessories', ''),
-(31, 2, 'Sollemnes', ''),
-(33, 2, 'Vulputate', ''),
-(43, 1, 'Home', ''),
-(2, 1, 'Dresses', ''),
-(19, 1, 'Accessories', ''),
-(22, 2, 'Mauris amattis', ''),
-(21, 1, 'Nunc imperdiet', ''),
-(23, 1, 'Lacus sed iaculis', ''),
-(29, 1, 'Litterarum', ''),
-(26, 1, 'Claritas', ''),
-(31, 1, 'Sollemnes', ''),
-(33, 1, 'Vulputate', ''),
-(28, 1, 'Hendrerit', ''),
-(25, 1, 'Aliquam', ''),
-(35, 2, 'Deals', ''),
-(36, 1, 'Blog', ''),
-(51, 1, 'Contact', ''),
-(51, 2, 'Contact', ''),
-(52, 2, 'Home3', ''),
-(52, 1, 'Home3', ''),
-(53, 2, 'Home2', ''),
-(53, 1, 'Home2', ''),
-(54, 3, 'Nghề Lưới', 'Lưới'),
-(54, 1, '', '');
+(68, 3, '', ''),
+(68, 1, '', ''),
+(69, 1, 'Fishing Reel', ''),
+(69, 3, 'Máy Câu', ''),
+(70, 1, 'Fishing Equipment', ''),
+(70, 3, 'Đồ Câu', ''),
+(71, 1, 'Fishing Pole', ''),
+(71, 3, 'Cần Câu', ''),
+(72, 1, 'Fishing Bait', ''),
+(72, 3, 'Mồi Câu', ''),
+(73, 1, 'Floating', ''),
+(73, 3, 'Phao', ''),
+(74, 1, 'Accessories', ''),
+(74, 3, 'Phụ Kiện', ''),
+(75, 1, 'Fishing Line', ''),
+(75, 3, 'Cước', ''),
+(76, 3, '', ''),
+(76, 1, '', '');
 
 -- --------------------------------------------------------
 
@@ -1994,31 +1947,31 @@ CREATE TABLE `oc_module` (
 --
 
 INSERT INTO `oc_module` (`module_id`, `name`, `code`, `setting`) VALUES
+(82, 'Bestsellers1', 'bestseller', 'a:5:{s:4:"name";s:12:"Bestsellers1";s:5:"limit";s:1:"6";s:5:"width";s:3:"153";s:6:"height";s:3:"153";s:6:"status";s:1:"1";}'),
 (40, 'Category', 'bestseller', 'a:5:{s:4:"name";s:8:"Category";s:5:"limit";s:1:"5";s:5:"width";s:2:"89";s:6:"height";s:2:"89";s:6:"status";s:1:"1";}'),
-(36, 'Blog page', 'pavblogcategory', 'a:4:{s:4:"name";s:9:"Blog page";s:11:"category_id";s:1:"1";s:6:"status";s:1:"1";s:4:"type";s:7:"default";}'),
-(39, 'Blog page', 'pavblogcomment', 'a:3:{s:4:"name";s:9:"Blog page";s:5:"limit";s:1:"5";s:6:"status";s:1:"1";}'),
-(31, 'Home page', 'pavcarousel', 'a:10:{s:4:"name";s:9:"Home page";s:6:"status";s:1:"1";s:9:"banner_id";s:1:"8";s:12:"itemsperpage";s:1:"6";s:5:"limit";s:2:"10";s:7:"columns";s:1:"6";s:9:"auto_play";s:1:"1";s:8:"interval";s:4:"3000";s:5:"width";s:3:"180";s:6:"height";s:3:"180";}'),
 (85, 'Banner1 Home2', 'pavbannerbuilder', 'a:5:{s:4:"name";s:13:"Banner1 Home2";s:12:"module_title";a:2:{i:1;s:0:"";i:2;s:0:"";}s:6:"status";s:1:"1";s:5:"class";s:19:"effect-v8 hidden-xs";s:6:"layout";s:473:"[{"index":0,"cls":"","bgcolor":"","bgimage":"","fullwidth":0,"parallax":0,"sfxcls":"","cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"image":"catalog/demo/banners/banner10.jpg","link":"#"}],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","inrow":0,"lgcol":8,"mdcol":8,"smcol":8,"xscol":12,"widgets":[{"image":"catalog/demo/banners/banner11.jpg","link":""}],"rows":[]}]}]";}'),
 (86, 'Banner2 Home2', 'pavbannerbuilder', 'a:5:{s:4:"name";s:13:"Banner2 Home2";s:12:"module_title";a:2:{i:1;s:0:"";i:2;s:0:"";}s:6:"status";s:1:"1";s:5:"class";s:19:"effect-v8 hidden-xs";s:6:"layout";s:474:"[{"index":0,"cls":"","bgcolor":"","bgimage":"","fullwidth":0,"parallax":0,"sfxcls":"","cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","inrow":0,"lgcol":8,"mdcol":8,"smcol":8,"xscol":12,"widgets":[{"image":"catalog/demo/banners/banner12.jpg","link":"#"}],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"image":"catalog/demo/banners/banner13.jpg","link":"#"}],"rows":[]}]}]";}'),
 (87, 'Banner3 Home2', 'pavbannerbuilder', 'a:5:{s:4:"name";s:13:"Banner3 Home2";s:12:"module_title";a:2:{i:1;s:0:"";i:2;s:0:"";}s:6:"status";s:1:"1";s:5:"class";s:19:"effect-v8 hidden-xs";s:6:"layout";s:474:"[{"index":0,"cls":"","bgcolor":"","bgimage":"","fullwidth":0,"parallax":0,"sfxcls":"","cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"image":"catalog/demo/banners/banner14.jpg","link":"#"}],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","inrow":0,"lgcol":8,"mdcol":8,"smcol":8,"xscol":12,"widgets":[{"image":"catalog/demo/banners/banner15.jpg","link":"#"}],"rows":[]}]}]";}'),
 (88, 'Banner4 Home2', 'pavbannerbuilder', 'a:5:{s:4:"name";s:13:"Banner4 Home2";s:12:"module_title";a:2:{i:1;s:0:"";i:2;s:13:"Banner4 Home2";}s:6:"status";s:1:"1";s:5:"class";s:19:"effect-v8 hidden-xs";s:6:"layout";s:474:"[{"index":0,"cls":"","bgcolor":"","bgimage":"","fullwidth":0,"parallax":0,"sfxcls":"","cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","inrow":0,"lgcol":8,"mdcol":8,"smcol":8,"xscol":12,"widgets":[{"image":"catalog/demo/banners/banner16.jpg","link":"#"}],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"image":"catalog/demo/banners/banner17.jpg","link":"#"}],"rows":[]}]}]";}'),
+(36, 'Blog page', 'pavblogcategory', 'a:4:{s:4:"name";s:9:"Blog page";s:11:"category_id";s:1:"1";s:6:"status";s:1:"1";s:4:"type";s:7:"default";}'),
+(39, 'Blog page', 'pavblogcomment', 'a:3:{s:4:"name";s:9:"Blog page";s:5:"limit";s:1:"5";s:6:"status";s:1:"1";}'),
+(77, 'Latest Blog1', 'pavbloglatest', 'a:9:{s:4:"name";s:12:"Latest Blog1";s:6:"status";s:1:"1";s:11:"description";a:2:{i:1;s:42:"																																										";i:2;s:42:"																																										";}s:11:"prefixclass";s:12:"prefix class";s:4:"tabs";s:6:"latest";s:5:"width";s:3:"275";s:6:"height";s:3:"215";s:4:"cols";s:1:"1";s:5:"limit";s:1:"1";}'),
+(31, 'Home page', 'pavcarousel', 'a:10:{s:4:"name";s:9:"Home page";s:6:"status";s:1:"1";s:9:"banner_id";s:1:"8";s:12:"itemsperpage";s:1:"6";s:5:"limit";s:2:"10";s:7:"columns";s:1:"6";s:9:"auto_play";s:1:"1";s:8:"interval";s:4:"3000";s:5:"width";s:3:"180";s:6:"height";s:3:"180";}'),
+(81, 'Deals Product 1', 'pavdeals', 'a:14:{s:6:"status";s:1:"1";s:4:"name";s:15:"Deals Product 1";s:10:"date_start";s:10:"2014-12-31";s:7:"date_to";s:10:"2018-07-03";s:12:"category_ids";a:20:{i:0;s:1:"0";i:1;s:2:"36";i:2;s:2:"45";i:3;s:2:"46";i:4;s:2:"59";i:5;s:2:"60";i:6;s:2:"61";i:7;s:2:"62";i:8;s:2:"63";i:9;s:2:"20";i:10;s:2:"26";i:11;s:2:"28";i:12;s:2:"18";i:13;s:2:"27";i:14;s:2:"25";i:15;s:2:"57";i:16;s:2:"17";i:17;s:2:"24";i:18;s:2:"33";i:19;s:2:"34";}s:10:"sort_deals";s:18:"p.sort_order__desc";s:5:"limit";s:1:"5";s:4:"cols";s:1:"5";s:12:"itemsperpage";s:1:"5";s:6:"prefix";s:0:"";s:5:"width";s:3:"200";s:6:"height";s:3:"200";s:9:"auto_play";s:1:"0";s:8:"interval";s:4:"1000";}'),
+(79, 'About', 'pavfooterlink', 'a:5:{s:4:"name";s:5:"About";s:5:"class";s:0:"";s:6:"status";s:1:"1";s:10:"groupLinks";s:1:"1";s:10:"text_title";a:2:{i:3;s:14:"Giới Thiệu";i:1;s:5:"About";}}'),
+(80, 'Account', 'pavfooterlink', 'a:5:{s:4:"name";s:7:"Account";s:5:"class";s:0:"";s:6:"status";s:1:"1";s:10:"groupLinks";s:1:"4";s:10:"text_title";a:2:{i:1;s:7:"Account";i:2;s:7:"Account";}}'),
+(78, 'Help', 'pavfooterlink', 'a:5:{s:4:"name";s:4:"Help";s:5:"class";s:0:"";s:6:"status";s:1:"1";s:10:"groupLinks";s:1:"2";s:10:"text_title";a:2:{i:1;s:4:"Help";i:2;s:4:"Help";}}'),
+(59, 'Default', 'pavhomebuilder', 'a:5:{s:6:"status";s:1:"1";s:4:"name";s:7:"Default";s:5:"class";s:0:"";s:6:"layout";s:3428:"[{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"20px auto","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":3,"mdcol":3,"smcol":3,"xscol":12,"widgets":[],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":9,"mdcol":9,"smcol":12,"xscol":12,"widgets":[{"name":"Custom top home","module":"html.YCVMGW","type":"html"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":3,"mdcol":3,"smcol":3,"xscol":12,"widgets":[],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":9,"mdcol":9,"smcol":12,"xscol":12,"widgets":[{"name":"Pav iview Sliders > Default","module":"pavsliderlayer.46","type":"module"}],"rows":[]}]},{"cls":"col-nopadding","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"coutdown to","module":"countdownproduct.F9cI8t","type":"countdownproduct"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Cần Câu","module":"listproduct_home1.pW4xo1","type":"listproduct_home1"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Máy Câu","module":"listproduct_home1.2iSxBV","type":"listproduct_home1"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Phụ Kiện","module":"listproduct_home1.0NsoHd","type":"listproduct_home1"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Pav Carousel > Home page","module":"pavcarousel.31","type":"module"}],"rows":[]}]}]";s:9:"module_id";s:2:"59";}'),
+(89, 'Home 3', 'pavhomebuilder', 'a:5:{s:6:"status";s:1:"1";s:4:"name";s:6:"Home 3";s:5:"class";s:5:"home3";s:6:"layout";s:2790:"[{"cls":"","bgcolor":"","bgimage":"","fullwidth":"1","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Pav iview Sliders > Slider 2","module":"pavsliderlayer.53","type":"module"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"featured categories ","module":"featured_category.PP1rGC","type":"featured_category"}],"rows":[]}]},{"cls":"hidden-sm hidden-xs","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 30px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"name":"Pav Product Carousel > Bestsellers","module":"pavproductcarousel.90","type":"module"}],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"name":"Pav Product Carousel > new arrivals","module":"pavproductcarousel.91","type":"module"}],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"name":"Pav Product Carousel > Top rating","module":"pavproductcarousel.92","type":"module"}],"rows":[]}]},{"cls":"hidden-xs","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"promotions ","module":"tab_image.thtR3G","type":"tab_image"}],"rows":[]}]},{"cls":"hidden-xs","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Pav Carousel > Home page","module":"pavcarousel.31","type":"module"}],"rows":[]}]}]";s:9:"module_id";s:2:"89";}'),
 (83, 'Home2', 'pavhomebuilder', 'a:5:{s:6:"status";s:1:"1";s:4:"name";s:5:"Home2";s:5:"class";s:5:"home2";s:6:"layout";s:3408:"[{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 20px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"quickly go to","module":"list_links.VZ73IG","type":"list_links"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 30px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":9,"mdcol":9,"smcol":12,"xscol":12,"widgets":[{"name":"Pav iview Sliders > Default","module":"pavsliderlayer.46","type":"module"}],"rows":[]},{"index":0,"cls":"hidden-sm hidden-xs","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":3,"mdcol":3,"smcol":3,"xscol":12,"widgets":[{"name":"coutdown to","module":"countdownproduct2.TRa6UC","type":"countdownproduct2"},{"name":"img1-home2","module":"image.WOBZwM","type":"image"},{"name":"img2-home2","module":"image.tZqfYO","type":"image"}],"rows":[]}]},{"index":0,"cls":"","bgcolor":"","bgimage":"","fullwidth":0,"parallax":0,"sfxcls":"","padding":"","margin":"","iposition":"","iattachment":"","cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":9,"mdcol":9,"smcol":12,"xscol":12,"widgets":[{"name":"Best Seller","module":"product_tabs.pqrEPt","type":"product_tabs"},{"name":"clothing, shoes","module":"listproduct_home2.7wgrsw","type":"listproduct_home2"},{"name":"Pav Banners Builder > Banner1 Home2","module":"pavbannerbuilder.85","type":"module"},{"name":"Baby & kids ","module":"listproduct_home2.22UAd8","type":"listproduct_home2"},{"name":"Pav Banners Builder > Banner2 Home2","module":"pavbannerbuilder.86","type":"module"},{"name":"Furniture ","module":"listproduct_home2.DGMjiY","type":"listproduct_home2"},{"name":"Pav Banners Builder > Banner3 Home2","module":"pavbannerbuilder.87","type":"module"},{"name":"Electronics ","module":"listproduct_home2.y3MZFt","type":"listproduct_home2"},{"name":"Pav Banners Builder > Banner4 Home2","module":"pavbannerbuilder.88","type":"module"}],"rows":[]},{"index":0,"cls":"hidden-sm hidden-xs","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":3,"mdcol":3,"smcol":3,"xscol":12,"widgets":[{"name":"most popular","module":"product_list.1W8LZN","type":"product_list"},{"name":"img2-home2","module":"image.aZaDsW","type":"image"},{"name":"img3-home2","module":"image.7xa41k","type":"image"},{"name":"we pick, you shop","module":"product_list.mTY6k4","type":"product_list"},{"name":"img4-hom2","module":"image.BLXThv","type":"image"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"30px auto 0","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Pav Carousel > Home page","module":"pavcarousel.31","type":"module"}],"rows":[]}]}]";s:9:"module_id";s:2:"83";}'),
+(90, 'Bestsellers', 'pavproductcarousel', 'a:12:{s:11:"description";a:2:{i:1;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:2;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:4:"name";s:11:"Bestsellers";s:6:"status";s:1:"1";s:6:"prefix";s:32:"sidebar panel-success block-cart";s:11:"fontawesome";s:11:"fontawesome";s:4:"tabs";a:1:{i:0;s:10:"bestseller";}s:7:"product";s:0:"";s:5:"width";s:3:"135";s:6:"height";s:3:"135";s:12:"itemsperpage";s:1:"6";s:4:"cols";s:1:"1";s:5:"limit";s:2:"10";}'),
+(91, 'new arrivals', 'pavproductcarousel', 'a:12:{s:11:"description";a:2:{i:1;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:2;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:4:"name";s:12:"new arrivals";s:6:"status";s:1:"1";s:6:"prefix";s:32:"sidebar panel-default block-cart";s:11:"fontawesome";s:11:"fontawesome";s:4:"tabs";a:1:{i:0;s:6:"latest";}s:7:"product";s:0:"";s:5:"width";s:3:"135";s:6:"height";s:3:"135";s:12:"itemsperpage";s:1:"6";s:4:"cols";s:1:"1";s:5:"limit";s:2:"10";}'),
+(92, 'Top rating', 'pavproductcarousel', 'a:12:{s:11:"description";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:4:"name";s:10:"Top rating";s:6:"status";s:1:"1";s:6:"prefix";s:34:"sidebar panel-default rating-block";s:11:"fontawesome";s:11:"fontawesome";s:4:"tabs";a:1:{i:0;s:9:"toprating";}s:7:"product";a:1:{i:0;s:2:"29";}s:5:"width";s:2:"80";s:6:"height";s:2:"80";s:12:"itemsperpage";s:2:"10";s:4:"cols";s:1:"1";s:5:"limit";s:1:"8";}'),
+(75, 'reassurance 1', 'pavreassurance', 'a:4:{s:6:"status";s:1:"1";s:4:"name";s:13:"reassurance 1";s:6:"prefix";s:0:"";s:15:"pavreassurances";a:3:{i:1;a:5:{s:11:"select_icon";s:17:"fa-dropbox  fa-3x";s:23:"reassurance_prefixclass";s:0:"";s:5:"title";a:2:{i:3;s:24:"Đóng Gói Cẩn Thận";i:1;s:34:" Free shipping anywhere worldwide ";}s:7:"caption";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:45:"&lt;p&gt;Onevery order over $150.00&lt;/p&gt;";}s:6:"detail";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:165:"&lt;p&gt;lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibhultate cursus a sit amet mauris. &lt;/p&gt;";}}i:2;a:5:{s:11:"select_icon";s:19:"fa-life-ring  fa-3x";s:23:"reassurance_prefixclass";s:0:"";s:5:"title";a:2:{i:3;s:28:"Chất Lượng Đảm Bảo";i:1;s:31:"Big change for member discount ";}s:7:"caption";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:45:"&lt;p&gt;Onevery order over $150.00&lt;/p&gt;";}s:6:"detail";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:165:"&lt;p&gt;lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibhultate cursus a sit amet mauris. &lt;/p&gt;";}}i:3;a:5:{s:11:"select_icon";s:15:"fa-truck  fa-3x";s:23:"reassurance_prefixclass";s:0:"";s:5:"title";a:2:{i:3;s:21:"Giao Hàng Tận Nơi";i:1;s:29:"24/24 online support custome ";}s:7:"caption";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:45:"&lt;p&gt;Onevery order over $150.00&lt;/p&gt;";}s:6:"detail";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:165:"&lt;p&gt;lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibhultate cursus a sit amet mauris. &lt;/p&gt;";}}}}'),
 (46, 'Default', 'pavsliderlayer', 'a:4:{s:4:"name";s:7:"Default";s:6:"status";s:1:"1";s:8:"group_id";s:1:"8";s:21:"pavsliderlayer_module";a:0:{}}'),
 (53, 'Slider 2', 'pavsliderlayer', 'a:4:{s:4:"name";s:8:"Slider 2";s:6:"status";s:1:"1";s:8:"group_id";s:2:"13";s:21:"pavsliderlayer_module";a:0:{}}'),
 (54, 'Slider 3', 'pavsliderlayer', 'a:4:{s:4:"name";s:8:"Slider 3";s:6:"status";s:1:"1";s:8:"group_id";s:2:"15";s:21:"pavsliderlayer_module";a:0:{}}'),
-(59, 'Default', 'pavhomebuilder', 'a:5:{s:6:"status";s:1:"1";s:4:"name";s:7:"Default";s:5:"class";s:0:"";s:6:"layout";s:3898:"[{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"20px auto","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":3,"mdcol":3,"smcol":3,"xscol":12,"widgets":[],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":9,"mdcol":9,"smcol":12,"xscol":12,"widgets":[{"name":"Custom top home","module":"html.YCVMGW","type":"html"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":3,"mdcol":3,"smcol":3,"xscol":12,"widgets":[],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":9,"mdcol":9,"smcol":12,"xscol":12,"widgets":[{"name":"Pav iview Sliders > Default","module":"pavsliderlayer.46","type":"module"}],"rows":[]}]},{"cls":"col-nopadding","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"coutdown to","module":"countdownproduct.F9cI8t","type":"countdownproduct"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"clothing, shoes & jewelry","module":"listproduct_home1.pW4xo1","type":"listproduct_home1"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Baby & kids","module":"listproduct_home1.2iSxBV","type":"listproduct_home1"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Home, furniture & patio","module":"listproduct_home1.0NsoHd","type":"listproduct_home1"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Electronics ","module":"listproduct_home1.pmhgxG","type":"listproduct_home1"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Pav Carousel > Home page","module":"pavcarousel.31","type":"module"}],"rows":[]}]}]";s:9:"module_id";s:2:"59";}'),
-(81, 'Deals Product 1', 'pavdeals', 'a:14:{s:6:"status";s:1:"1";s:4:"name";s:15:"Deals Product 1";s:10:"date_start";s:10:"2014-12-31";s:7:"date_to";s:10:"2018-07-03";s:12:"category_ids";a:20:{i:0;s:1:"0";i:1;s:2:"36";i:2;s:2:"45";i:3;s:2:"46";i:4;s:2:"59";i:5;s:2:"60";i:6;s:2:"61";i:7;s:2:"62";i:8;s:2:"63";i:9;s:2:"20";i:10;s:2:"26";i:11;s:2:"28";i:12;s:2:"18";i:13;s:2:"27";i:14;s:2:"25";i:15;s:2:"57";i:16;s:2:"17";i:17;s:2:"24";i:18;s:2:"33";i:19;s:2:"34";}s:10:"sort_deals";s:18:"p.sort_order__desc";s:5:"limit";s:1:"5";s:4:"cols";s:1:"5";s:12:"itemsperpage";s:1:"5";s:6:"prefix";s:0:"";s:5:"width";s:3:"200";s:6:"height";s:3:"200";s:9:"auto_play";s:1:"0";s:8:"interval";s:4:"1000";}'),
-(75, 'reassurance 1', 'pavreassurance', 'a:4:{s:6:"status";s:1:"1";s:4:"name";s:13:"reassurance 1";s:6:"prefix";s:0:"";s:15:"pavreassurances";a:3:{i:1;a:5:{s:11:"select_icon";s:17:"fa-dropbox  fa-3x";s:23:"reassurance_prefixclass";s:0:"";s:5:"title";a:2:{i:1;s:34:" Free shipping anywhere worldwide ";i:2;s:34:" Free shipping anywhere worldwide ";}s:7:"caption";a:2:{i:1;s:45:"&lt;p&gt;Onevery order over $150.00&lt;/p&gt;";i:2;s:45:"&lt;p&gt;Onevery order over $150.00&lt;/p&gt;";}s:6:"detail";a:2:{i:1;s:165:"&lt;p&gt;lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibhultate cursus a sit amet mauris. &lt;/p&gt;";i:2;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}}i:2;a:5:{s:11:"select_icon";s:19:"fa-life-ring  fa-3x";s:23:"reassurance_prefixclass";s:0:"";s:5:"title";a:2:{i:1;s:31:"Big change for member discount ";i:2;s:31:"Big change for member discount ";}s:7:"caption";a:2:{i:1;s:45:"&lt;p&gt;Onevery order over $150.00&lt;/p&gt;";i:2;s:45:"&lt;p&gt;Onevery order over $150.00&lt;/p&gt;";}s:6:"detail";a:2:{i:1;s:165:"&lt;p&gt;lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibhultate cursus a sit amet mauris. &lt;/p&gt;";i:2;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}}i:3;a:5:{s:11:"select_icon";s:15:"fa-truck  fa-3x";s:23:"reassurance_prefixclass";s:0:"";s:5:"title";a:2:{i:1;s:29:"24/24 online support custome ";i:2;s:29:"24/24 online support custome ";}s:7:"caption";a:2:{i:1;s:45:"&lt;p&gt;Onevery order over $150.00&lt;/p&gt;";i:2;s:45:"&lt;p&gt;Onevery order over $150.00&lt;/p&gt;";}s:6:"detail";a:2:{i:1;s:165:"&lt;p&gt;lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibhultate cursus a sit amet mauris. &lt;/p&gt;";i:2;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}}}}'),
-(76, 'Testimonial 1', 'pavtestimonial', 'a:10:{s:4:"name";s:13:"Testimonial 1";s:6:"status";s:1:"1";s:9:"auto_play";s:1:"1";s:13:"text_interval";s:4:"8000";s:5:"width";s:2:"60";s:6:"height";s:2:"60";s:11:"column_item";s:1:"2";s:10:"page_items";s:1:"4";s:5:"class";s:20:" hidden-sm hidden-xs";s:16:"testimonial_item";a:3:{i:1;a:4:{s:5:"image";s:37:"catalog/demo/module/testimonial-1.png";s:10:"video_link";s:43:"https://www.youtube.com/watch?v=KgME0m6FEf8";s:7:"profile";a:2:{i:1;s:142:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;                                &lt;div class=&quot;job&quot;&gt;Desginer&lt;/div&gt;";i:2;s:142:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;                                &lt;div class=&quot;job&quot;&gt;Desginer&lt;/div&gt;";}s:11:"description";a:2:{i:1;s:160:"&lt;p&gt;This is Photoshop\'s version&amp;nbsp; of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";i:2;s:160:"&lt;p&gt;This is Photoshop\'s version&amp;nbsp; of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";}}i:2;a:4:{s:5:"image";s:37:"catalog/demo/module/testimonial-2.png";s:10:"video_link";s:43:"https://www.youtube.com/watch?v=KgME0m6FEf8";s:7:"profile";a:2:{i:1;s:142:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;                                &lt;div class=&quot;job&quot;&gt;Desginer&lt;/div&gt;";i:2;s:142:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;                                &lt;div class=&quot;job&quot;&gt;Desginer&lt;/div&gt;";}s:11:"description";a:2:{i:1;s:156:"&lt;p&gt;Tisi elit consequat ipsum, nec sagof Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";i:2;s:156:"&lt;p&gt;Tisi elit consequat ipsum, nec sagof Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";}}i:3;a:4:{s:5:"image";s:37:"catalog/demo/module/testimonial-3.png";s:10:"video_link";s:43:"https://www.youtube.com/watch?v=KgME0m6FEf8";s:7:"profile";a:2:{i:1;s:118:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;&lt;div class=&quot;job&quot;&gt;Fashion Designer&lt;/div&gt;";i:2;s:118:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;&lt;div class=&quot;job&quot;&gt;Fashion Designer&lt;/div&gt;";}s:11:"description";a:2:{i:1;s:156:"&lt;p&gt;Tisi elit consequat ipsum, nec sagof Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";i:2;s:156:"&lt;p&gt;Tisi elit consequat ipsum, nec sagof Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";}}}}'),
-(82, 'Bestsellers1', 'bestseller', 'a:5:{s:4:"name";s:12:"Bestsellers1";s:5:"limit";s:1:"6";s:5:"width";s:3:"153";s:6:"height";s:3:"153";s:6:"status";s:1:"1";}'),
-(89, 'Home 3', 'pavhomebuilder', 'a:5:{s:6:"status";s:1:"1";s:4:"name";s:6:"Home 3";s:5:"class";s:5:"home3";s:6:"layout";s:2790:"[{"cls":"","bgcolor":"","bgimage":"","fullwidth":"1","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Pav iview Sliders > Slider 2","module":"pavsliderlayer.53","type":"module"}],"rows":[]}]},{"cls":"","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"featured categories ","module":"featured_category.PP1rGC","type":"featured_category"}],"rows":[]}]},{"cls":"hidden-sm hidden-xs","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 30px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"name":"Pav Product Carousel > Bestsellers","module":"pavproductcarousel.90","type":"module"}],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"name":"Pav Product Carousel > new arrivals","module":"pavproductcarousel.91","type":"module"}],"rows":[]},{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":4,"mdcol":4,"smcol":4,"xscol":12,"widgets":[{"name":"Pav Product Carousel > Top rating","module":"pavproductcarousel.92","type":"module"}],"rows":[]}]},{"cls":"hidden-xs","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"0 auto 40px","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"promotions ","module":"tab_image.thtR3G","type":"tab_image"}],"rows":[]}]},{"cls":"hidden-xs","bgcolor":"","bgimage":"","fullwidth":"0","parallax":"0","sfxcls":null,"padding":"","margin":"","iposition":null,"iattachment":null,"cols":[{"index":0,"cls":"","sfxcls":"","bgcolor":"","bgimage":"","padding":"","margin":"","iposition":"","iattachment":"","inrow":0,"lgcol":12,"mdcol":12,"smcol":12,"xscol":12,"widgets":[{"name":"Pav Carousel > Home page","module":"pavcarousel.31","type":"module"}],"rows":[]}]}]";s:9:"module_id";s:2:"89";}'),
-(77, 'Latest Blog1', 'pavbloglatest', 'a:9:{s:4:"name";s:12:"Latest Blog1";s:6:"status";s:1:"1";s:11:"description";a:2:{i:1;s:42:"																																										";i:2;s:42:"																																										";}s:11:"prefixclass";s:12:"prefix class";s:4:"tabs";s:6:"latest";s:5:"width";s:3:"275";s:6:"height";s:3:"215";s:4:"cols";s:1:"1";s:5:"limit";s:1:"1";}'),
-(78, 'Help', 'pavfooterlink', 'a:5:{s:4:"name";s:4:"Help";s:5:"class";s:0:"";s:6:"status";s:1:"1";s:10:"groupLinks";s:1:"2";s:10:"text_title";a:2:{i:1;s:4:"Help";i:2;s:4:"Help";}}'),
-(79, 'About', 'pavfooterlink', 'a:5:{s:4:"name";s:5:"About";s:5:"class";s:0:"";s:6:"status";s:1:"1";s:10:"groupLinks";s:1:"1";s:10:"text_title";a:2:{i:1;s:5:"About";i:2;s:5:"About";}}'),
-(80, 'Account', 'pavfooterlink', 'a:5:{s:4:"name";s:7:"Account";s:5:"class";s:0:"";s:6:"status";s:1:"1";s:10:"groupLinks";s:1:"4";s:10:"text_title";a:2:{i:1;s:7:"Account";i:2;s:7:"Account";}}'),
-(90, 'Bestsellers', 'pavproductcarousel', 'a:12:{s:11:"description";a:2:{i:1;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:2;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:4:"name";s:11:"Bestsellers";s:6:"status";s:1:"1";s:6:"prefix";s:32:"sidebar panel-success block-cart";s:11:"fontawesome";s:11:"fontawesome";s:4:"tabs";a:1:{i:0;s:10:"bestseller";}s:7:"product";s:0:"";s:5:"width";s:3:"135";s:6:"height";s:3:"135";s:12:"itemsperpage";s:1:"6";s:4:"cols";s:1:"1";s:5:"limit";s:2:"10";}'),
-(91, 'new arrivals', 'pavproductcarousel', 'a:12:{s:11:"description";a:2:{i:1;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:2;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:4:"name";s:12:"new arrivals";s:6:"status";s:1:"1";s:6:"prefix";s:32:"sidebar panel-default block-cart";s:11:"fontawesome";s:11:"fontawesome";s:4:"tabs";a:1:{i:0;s:6:"latest";}s:7:"product";s:0:"";s:5:"width";s:3:"135";s:6:"height";s:3:"135";s:12:"itemsperpage";s:1:"6";s:4:"cols";s:1:"1";s:5:"limit";s:2:"10";}'),
-(92, 'Top rating', 'pavproductcarousel', 'a:12:{s:11:"description";a:2:{i:1;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:2;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:4:"name";s:10:"Top rating";s:6:"status";s:1:"1";s:6:"prefix";s:34:"sidebar panel-default rating-block";s:11:"fontawesome";s:11:"fontawesome";s:4:"tabs";a:1:{i:0;s:9:"toprating";}s:7:"product";s:0:"";s:5:"width";s:2:"80";s:6:"height";s:2:"80";s:12:"itemsperpage";s:2:"10";s:4:"cols";s:1:"1";s:5:"limit";s:1:"8";}');
+(76, 'Testimonial 1', 'pavtestimonial', 'a:10:{s:4:"name";s:13:"Testimonial 1";s:6:"status";s:1:"1";s:9:"auto_play";s:1:"1";s:13:"text_interval";s:4:"8000";s:5:"width";s:2:"60";s:6:"height";s:2:"60";s:11:"column_item";s:1:"2";s:10:"page_items";s:1:"4";s:5:"class";s:20:" hidden-sm hidden-xs";s:16:"testimonial_item";a:3:{i:1;a:4:{s:5:"image";s:37:"catalog/demo/module/testimonial-1.png";s:10:"video_link";s:43:"https://www.youtube.com/watch?v=KgME0m6FEf8";s:7:"profile";a:2:{i:1;s:142:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;                                &lt;div class=&quot;job&quot;&gt;Desginer&lt;/div&gt;";i:2;s:142:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;                                &lt;div class=&quot;job&quot;&gt;Desginer&lt;/div&gt;";}s:11:"description";a:2:{i:1;s:160:"&lt;p&gt;This is Photoshop\'s version&amp;nbsp; of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";i:2;s:160:"&lt;p&gt;This is Photoshop\'s version&amp;nbsp; of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";}}i:2;a:4:{s:5:"image";s:37:"catalog/demo/module/testimonial-2.png";s:10:"video_link";s:43:"https://www.youtube.com/watch?v=KgME0m6FEf8";s:7:"profile";a:2:{i:1;s:142:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;                                &lt;div class=&quot;job&quot;&gt;Desginer&lt;/div&gt;";i:2;s:142:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;                                &lt;div class=&quot;job&quot;&gt;Desginer&lt;/div&gt;";}s:11:"description";a:2:{i:1;s:156:"&lt;p&gt;Tisi elit consequat ipsum, nec sagof Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";i:2;s:156:"&lt;p&gt;Tisi elit consequat ipsum, nec sagof Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";}}i:3;a:4:{s:5:"image";s:37:"catalog/demo/module/testimonial-3.png";s:10:"video_link";s:43:"https://www.youtube.com/watch?v=KgME0m6FEf8";s:7:"profile";a:2:{i:1;s:118:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;&lt;div class=&quot;job&quot;&gt;Fashion Designer&lt;/div&gt;";i:2;s:118:"&lt;h4 class=&quot;name&quot;&gt;Pellen tesque&lt;/h4&gt;&lt;div class=&quot;job&quot;&gt;Fashion Designer&lt;/div&gt;";}s:11:"description";a:2:{i:1;s:156:"&lt;p&gt;Tisi elit consequat ipsum, nec sagof Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";i:2;s:156:"&lt;p&gt;Tisi elit consequat ipsum, nec sagof Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean solliin, lorem quis bibendum auctor&lt;/p&gt;";}}}}');
 
 -- --------------------------------------------------------
 
@@ -3018,14 +2971,13 @@ INSERT INTO `oc_pavwidget` (`pavwidget_id`, `name`, `code`, `setting`, `module_i
 (4542, 'content', 'featured_category.FLyBdV', 'YToxMzp7czo0OiJyYW5kIjtzOjE4OiIwLjgxNDYyNTM2Nzc1NzU5MzIiO3M6NjoibW9kdWxlIjtzOjI0OiJmZWF0dXJlZF9jYXRlZ29yeS5GTHlCZFYiO3M6ODoic2F2ZWRhdGEiO3M6MToiMSI7czo0OiJ3a2V5IjtzOjI0OiJmZWF0dXJlZF9jYXRlZ29yeS5GTHlCZFYiO3M6NToid3R5cGUiO3M6MTc6ImZlYXR1cmVkX2NhdGVnb3J5IjtzOjExOiJ3aWRnZXRfbmFtZSI7czoxOToiRmVhdHVyZWQgY2F0ZWdvcnkgMiI7czoxMDoic2hvd190aXRsZSI7czoxOiIwIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMSI7czoxOToiRmVhdHVyZWQgY2F0ZWdvcnkgMiI7czoxNDoid2lkZ2V0X3RpdGxlXzIiO3M6MDoiIjtzOjEyOiJhZGRpdGlvbl9jbHMiO3M6NTM6ImZlYXR1cmVkLWNhdGVnb3J5IGZlYXR1cmVkLWNhdGVnb3J5LXYyIGljb24tZWZmZWN0LXYxIjtzOjE5OiJjYXRlZ29yaWVzX2ZlYXR1cmVkIjthOjQ6e2k6MDthOjI6e3M6NToiaW1hZ2UiO3M6MzI6ImNhdGFsb2cvZGVtby9pY29uL2ljb24tY2F0ZTYucG5nIjtzOjI6ImlkIjtzOjI6IjYxIjt9aToxO2E6Mjp7czo1OiJpbWFnZSI7czowOiIiO3M6MjoiaWQiO3M6MjoiNjIiO31pOjI7YToyOntzOjU6ImltYWdlIjtzOjMyOiJjYXRhbG9nL2RlbW8vaWNvbi9pY29uLWNhdGU3LnBuZyI7czoyOiJpZCI7czoyOiI0NSI7fWk6MzthOjI6e3M6NToiaW1hZ2UiO3M6MzI6ImNhdGFsb2cvZGVtby9pY29uL2ljb24tY2F0ZTgucG5nIjtzOjI6ImlkIjtzOjI6IjI1Ijt9fXM6MTE6ImltYWdlX3dpZHRoIjtzOjM6IjExOCI7czoxMjoiaW1hZ2VfaGVpZ2h0IjtzOjI6Ijk2Ijt9', 48, 0),
 (4541, 'content', 'bloglatest.mn9kWj', 'YToxNDp7czo0OiJyYW5kIjtzOjE5OiIwLjA2MjY1NjM0Mjg4NzA0ODI0IjtzOjY6Im1vZHVsZSI7czoxNzoiYmxvZ2xhdGVzdC5tbjlrV2oiO3M6ODoic2F2ZWRhdGEiO3M6MToiMSI7czo0OiJ3a2V5IjtzOjE3OiJibG9nbGF0ZXN0Lm1uOWtXaiI7czo1OiJ3dHlwZSI7czoxMDoiYmxvZ2xhdGVzdCI7czoxMToid2lkZ2V0X25hbWUiO3M6NToiV29ya3MiO3M6MTA6InNob3dfdGl0bGUiO3M6MToiMCI7czoxNDoid2lkZ2V0X3RpdGxlXzEiO3M6NToiV29ya3MiO3M6MTQ6IndpZGdldF90aXRsZV8yIjtzOjExOiJibG9nMi1ob21lMiI7czoxMjoiYWRkaXRpb25fY2xzIjtzOjQ3OiJwYW5lbC1zcGVjaWFsIHNwYWNlLXRvcC0xNTAgaGlkZGVuLXNtIGhpZGRlbi14cyI7czozOiJuYnIiO3M6MToiMyI7czo1OiJ3aWR0aCI7czozOiIzNTAiO3M6NjoiaGVpZ2h0IjtzOjM6IjIwMCI7czo0OiJjb2xzIjtzOjE6IjEiO30=', 48, 0),
 (5823, 'content', 'image.WOBZwM', 'YToxNjp7czo0OiJyYW5kIjtzOjE4OiIwLjUwNDk3OTM2MDkwMzAyOTgiO3M6NjoibW9kdWxlIjtzOjEyOiJpbWFnZS5XT0Jad00iO3M6ODoic2F2ZWRhdGEiO3M6MToiMSI7czo0OiJ3a2V5IjtzOjEyOiJpbWFnZS5XT0Jad00iO3M6NToid3R5cGUiO3M6NToiaW1hZ2UiO3M6MTE6IndpZGdldF9uYW1lIjtzOjEwOiJpbWcxLWhvbWUyIjtzOjEwOiJzaG93X3RpdGxlIjtzOjE6IjAiO3M6MTQ6IndpZGdldF90aXRsZV8xIjtzOjEwOiJpbWcxLWhvbWUyIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMiI7czoxMDoiaW1nMS1ob21lMiI7czoxMjoiYWRkaXRpb25fY2xzIjtzOjI4OiJlZmZlY3QtdjMgc3BhY2UtbWFyZ2luLXRiLTIwIjtzOjk6ImltYWdlZmlsZSI7czozMjoiY2F0YWxvZy9kZW1vL2Jhbm5lcnMvYmFubmVyNS5qcGciO3M6NDoic2l6ZSI7czowOiIiO3M6OToiYW5pbWF0aW9uIjtzOjE6IjEiO3M6OToiYWxpZ25tZW50IjtzOjY6ImNlbnRlciI7czo3OiJpc3BvcHVwIjtzOjE6IjEiO3M6NDoibGluayI7czoxOiIjIjt9', 83, 0),
-(5733, 'content', 'listproduct_home1.pW4xo1', 'YToyMTp7czo0OiJyYW5kIjtzOjE5OiIwLjE0NTAyMzIyODY0NzcyMTIxIjtzOjY6Im1vZHVsZSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTEucFc0eG8xIjtzOjg6InNhdmVkYXRhIjtzOjE6IjEiO3M6NDoid2tleSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTEucFc0eG8xIjtzOjU6Ind0eXBlIjtzOjE3OiJMaXN0cHJvZHVjdF9ob21lMSI7czoxMToid2lkZ2V0X25hbWUiO3M6Mjk6ImNsb3RoaW5nLCBzaG9lcyAmYW1wOyBqZXdlbHJ5IjtzOjEwOiJzaG93X3RpdGxlIjtzOjE6IjEiO3M6MTQ6IndpZGdldF90aXRsZV8xIjtzOjI5OiJjbG90aGluZywgc2hvZXMgJmFtcDsgamV3ZWxyeSI7czoxNDoid2lkZ2V0X3RpdGxlXzIiO3M6Mjk6ImNsb3RoaW5nLCBzaG9lcyAmYW1wOyBqZXdlbHJ5IjtzOjEyOiJhZGRpdGlvbl9jbHMiO3M6OToidGV4dC1pbmZvIjtzOjU6ImxpbmtzIjthOjU6e2k6MDtzOjI6IjQ1IjtpOjE7czoyOiI0NiI7aToyO3M6MjoiNTkiO2k6MztzOjI6IjI4IjtpOjQ7czoyOiI1OSI7fXM6OToidGl0bGVfMV8xIjtzOjg6ImJlc2VsbGVyIjtzOjk6InRpdGxlXzFfMiI7czo4OiJiZXNlbGxlciI7czo2OiJzdHlsZTEiO3M6MjI6InBhbmVsLXYyIHBhbmVsLWRlZmF1bHQiO3M6MTE6InByb2R1Y3QxX2lkIjtzOjIwOiIzMCwyOCwyOSw1MCwzMyw0NCw0MyI7czo5OiJ0aXRsZV8yXzEiO3M6MTE6Im5ldyBhcml2YWxzIjtzOjk6InRpdGxlXzJfMiI7czoxMToibmV3IGFyaXZhbHMiO3M6Njoic3R5bGUyIjtzOjIwOiJwYW5lbC12MiBwYW5lbC1pbmZvICI7czoxMToicHJvZHVjdDJfaWQiO3M6MjA6IjQyLDQ0LDQ3LDQ4LDIwLDMwLDQwIjtzOjEwOiJiYW5uZXJfaW1nIjtzOjMyOiJjYXRhbG9nL2RlbW8vYmFubmVycy9iYW5uZXIxLmpwZyI7czo5OiJpbWdfY2xhc3MiO3M6NToicmlnaHQiO30=', 59, 0),
 (5820, 'content', 'image.aZaDsW', 'YToxNjp7czo0OiJyYW5kIjtzOjE5OiIwLjIxMTQxNTU1MDA2NjQzMTQyIjtzOjY6Im1vZHVsZSI7czoxMjoiaW1hZ2UuYVphRHNXIjtzOjg6InNhdmVkYXRhIjtzOjE6IjEiO3M6NDoid2tleSI7czoxMjoiaW1hZ2UuYVphRHNXIjtzOjU6Ind0eXBlIjtzOjU6ImltYWdlIjtzOjExOiJ3aWRnZXRfbmFtZSI7czoxMDoiaW1nMi1ob21lMiI7czoxMDoic2hvd190aXRsZSI7czoxOiIwIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMSI7czoxMDoiaW1nMi1ob21lMiI7czoxNDoid2lkZ2V0X3RpdGxlXzIiO3M6MTA6ImltZzItaG9tZTIiO3M6MTI6ImFkZGl0aW9uX2NscyI7czo5OiJlZmZlY3QtdjMiO3M6OToiaW1hZ2VmaWxlIjtzOjMyOiJjYXRhbG9nL2RlbW8vYmFubmVycy9iYW5uZXI3LmpwZyI7czo0OiJzaXplIjtzOjA6IiI7czo5OiJhbmltYXRpb24iO3M6MToiMSI7czo5OiJhbGlnbm1lbnQiO3M6NjoiY2VudGVyIjtzOjc6ImlzcG9wdXAiO3M6MToiMSI7czo0OiJsaW5rIjtzOjE6IiMiO30=', 83, 0),
 (5818, 'content', 'countdownproduct2.TRa6UC', 'YToxODp7czo0OiJyYW5kIjtzOjE4OiIwLjk0NDA3MjI3MjI5Nzg2NTYiO3M6NjoibW9kdWxlIjtzOjI0OiJjb3VudGRvd25wcm9kdWN0Mi5UUmE2VUMiO3M6ODoic2F2ZWRhdGEiO3M6MToiMSI7czo0OiJ3a2V5IjtzOjI0OiJjb3VudGRvd25wcm9kdWN0Mi5UUmE2VUMiO3M6NToid3R5cGUiO3M6MTc6ImNvdW50ZG93bnByb2R1Y3QyIjtzOjExOiJ3aWRnZXRfbmFtZSI7czoxMToiY291dGRvd24gdG8iO3M6MTA6InNob3dfdGl0bGUiO3M6MToiMSI7czoxNDoid2lkZ2V0X3RpdGxlXzEiO3M6MTE6ImNvdXRkb3duIHRvIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMiI7czoxMToiY291dGRvd24gdG8iO3M6MTI6ImFkZGl0aW9uX2NscyI7czowOiIiO3M6MTA6InN0YXJ0X2RhdGUiO3M6MTA6IjIwMTAtMDItMDIiO3M6ODoiZW5kX2RhdGUiO3M6MTA6IjIwMTYtMTEtMjIiO3M6MTQ6ImNob29zZV9wcm9kdWN0IjtzOjA6IiI7czo3OiJwcm9kdWN0IjthOjU6e2k6MDtzOjI6IjMwIjtpOjE7czoyOiI0MSI7aToyO3M6MjoiMjgiO2k6MztzOjI6IjQwIjtpOjQ7czoyOiI0MiI7fXM6MTM6Imh0bWxjb250ZW50XzEiO3M6NjE6IiZsdDtzcGFuIGNsYXNzPSZxdW90O2JsYWNrJnF1b3Q7Jmd0O2JsYWNrJmx0Oy9zcGFuJmd0OyBmcmlkYXkiO3M6MTM6Imh0bWxjb250ZW50XzIiO3M6NjE6IiZsdDtzcGFuIGNsYXNzPSZxdW90O2JsYWNrJnF1b3Q7Jmd0O2JsYWNrJmx0Oy9zcGFuJmd0OyBmcmlkYXkiO3M6MTE6ImltYWdlX3dpZHRoIjtzOjM6IjIwMCI7czoxMjoiaW1hZ2VfaGVpZ2h0IjtzOjM6IjIwMCI7fQ==', 83, 0),
-(5730, 'content', 'listproduct_home1.0NsoHd', 'YToyMTp7czo0OiJyYW5kIjtzOjE5OiIwLjQyOTQzMjcxOTQ4MTgxNDk0IjtzOjY6Im1vZHVsZSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTEuME5zb0hkIjtzOjg6InNhdmVkYXRhIjtzOjE6IjEiO3M6NDoid2tleSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTEuME5zb0hkIjtzOjU6Ind0eXBlIjtzOjE3OiJsaXN0cHJvZHVjdF9ob21lMSI7czoxMToid2lkZ2V0X25hbWUiO3M6Mjc6IkhvbWUsIGZ1cm5pdHVyZSAmYW1wOyBwYXRpbyI7czoxMDoic2hvd190aXRsZSI7czoxOiIxIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMSI7czoyNzoiSG9tZSwgZnVybml0dXJlICZhbXA7IHBhdGlvIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMiI7czoyNzoiSG9tZSwgZnVybml0dXJlICZhbXA7IHBhdGlvIjtzOjEyOiJhZGRpdGlvbl9jbHMiO3M6MTI6InRleHQtd2FybmluZyI7czo1OiJsaW5rcyI7YTo1OntpOjA7czoyOiIzNiI7aToxO3M6MjoiNDUiO2k6MjtzOjI6IjQ2IjtpOjM7czoyOiI1OSI7aTo0O3M6MjoiNjAiO31zOjk6InRpdGxlXzFfMSI7czoxMDoiQmVzdHNlbGxlciI7czo5OiJ0aXRsZV8xXzIiO3M6MTA6IkJlc3RzZWxsZXIiO3M6Njoic3R5bGUxIjtzOjIyOiJwYW5lbC12MiBwYW5lbC1kZWZhdWx0IjtzOjExOiJwcm9kdWN0MV9pZCI7czoyMDoiMzAsMjgsMjksNTAsMzMsNDQsNDMiO3M6OToidGl0bGVfMl8xIjtzOjEyOiJOZXcgQXJyaXZhbHMiO3M6OToidGl0bGVfMl8yIjtzOjEyOiJOZXcgQXJyaXZhbHMiO3M6Njoic3R5bGUyIjtzOjIzOiJwYW5lbC12MiBwYW5lbC13YXJuaW5nICI7czoxMToicHJvZHVjdDJfaWQiO3M6MTc6IjQyLDQ0LDQ3LDQ4LDMwLDI4IjtzOjEwOiJiYW5uZXJfaW1nIjtzOjMyOiJjYXRhbG9nL2RlbW8vYmFubmVycy9iYW5uZXIzLmpwZyI7czo5OiJpbWdfY2xhc3MiO3M6NToicmlnaHQiO30=', 59, 0),
-(5731, 'content', 'listproduct_home1.2iSxBV', 'YToyMTp7czo0OiJyYW5kIjtzOjE4OiIwLjYxNzAzMjAzNTYwODE4NDEiO3M6NjoibW9kdWxlIjtzOjI0OiJsaXN0cHJvZHVjdF9ob21lMS4yaVN4QlYiO3M6ODoic2F2ZWRhdGEiO3M6MToiMSI7czo0OiJ3a2V5IjtzOjI0OiJsaXN0cHJvZHVjdF9ob21lMS4yaVN4QlYiO3M6NToid3R5cGUiO3M6MTc6Imxpc3Rwcm9kdWN0X2hvbWUxIjtzOjExOiJ3aWRnZXRfbmFtZSI7czoxNToiQmFieSAmYW1wOyBraWRzIjtzOjEwOiJzaG93X3RpdGxlIjtzOjE6IjEiO3M6MTQ6IndpZGdldF90aXRsZV8xIjtzOjE1OiJCYWJ5ICZhbXA7IGtpZHMiO3M6MTQ6IndpZGdldF90aXRsZV8yIjtzOjE1OiJCYWJ5ICZhbXA7IGtpZHMiO3M6MTI6ImFkZGl0aW9uX2NscyI7czoxMjoidGV4dC1zdWNjZXNzIjtzOjU6ImxpbmtzIjthOjQ6e2k6MDtzOjI6IjQ2IjtpOjE7czoyOiI0NiI7aToyO3M6MjoiMzYiO2k6MztzOjI6IjU3Ijt9czo5OiJ0aXRsZV8xXzEiO3M6MTA6IkJlc3RzZWxsZXIiO3M6OToidGl0bGVfMV8yIjtzOjEwOiJCZXN0c2VsbGVyIjtzOjY6InN0eWxlMSI7czoyMjoicGFuZWwtdjIgcGFuZWwtZGVmYXVsdCI7czoxMToicHJvZHVjdDFfaWQiO3M6MTE6IjQyLDQ0LDQ3LDQ4IjtzOjk6InRpdGxlXzJfMSI7czoxMjoiTmV3IEFycml2YWxzIjtzOjk6InRpdGxlXzJfMiI7czoxMjoiTmV3IEFycml2YWxzIjtzOjY6InN0eWxlMiI7czoyMzoicGFuZWwtdjIgcGFuZWwtc3VjY2VzcyAiO3M6MTE6InByb2R1Y3QyX2lkIjtzOjExOiI0Miw0NCw0Nyw0OCI7czoxMDoiYmFubmVyX2ltZyI7czozMjoiY2F0YWxvZy9kZW1vL2Jhbm5lcnMvYmFubmVyMi5qcGciO3M6OToiaW1nX2NsYXNzIjtzOjQ6ImxlZnQiO30=', 59, 0),
-(5732, 'content', 'listproduct_home1.pmhgxG', 'YToyMTp7czo0OiJyYW5kIjtzOjE5OiIwLjQxMjE4MTk3Njg4ODM1NzM0IjtzOjY6Im1vZHVsZSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTEucG1oZ3hHIjtzOjg6InNhdmVkYXRhIjtzOjE6IjEiO3M6NDoid2tleSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTEucG1oZ3hHIjtzOjU6Ind0eXBlIjtzOjE3OiJsaXN0cHJvZHVjdF9ob21lMSI7czoxMToid2lkZ2V0X25hbWUiO3M6MTI6IkVsZWN0cm9uaWNzICI7czoxMDoic2hvd190aXRsZSI7czoxOiIxIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMSI7czoxMjoiRWxlY3Ryb25pY3MgIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMiI7czoxMjoiRWxlY3Ryb25pY3MgIjtzOjEyOiJhZGRpdGlvbl9jbHMiO3M6MTE6InRleHQtZGFuZ2VyIjtzOjU6ImxpbmtzIjthOjY6e2k6MDtzOjI6IjQ1IjtpOjE7czoyOiI0NiI7aToyO3M6MjoiNTkiO2k6MztzOjI6IjYxIjtpOjQ7czoyOiI2MiI7aTo1O3M6MjoiMjciO31zOjk6InRpdGxlXzFfMSI7czoxMDoiQmVzdHNlbGxlciI7czo5OiJ0aXRsZV8xXzIiO3M6NToiVGl0bGUiO3M6Njoic3R5bGUxIjtzOjIyOiJwYW5lbC12MiBwYW5lbC1kZWZhdWx0IjtzOjExOiJwcm9kdWN0MV9pZCI7czoxNzoiNDIsNDQsNDcsNDgsMjAsMjIiO3M6OToidGl0bGVfMl8xIjtzOjEyOiJOZXcgQXJyaXZhbHMiO3M6OToidGl0bGVfMl8yIjtzOjU6IlRpdGxlIjtzOjY6InN0eWxlMiI7czoyMToicGFuZWwtdjIgcGFuZWwtZGFuZ2VyIjtzOjExOiJwcm9kdWN0Ml9pZCI7czoyMDoiMzAsMjgsMjksNTAsMzMsNDQsNDMiO3M6MTA6ImJhbm5lcl9pbWciO3M6MzI6ImNhdGFsb2cvZGVtby9iYW5uZXJzL2Jhbm5lcjQuanBnIjtzOjk6ImltZ19jbGFzcyI7czo0OiJsZWZ0Ijt9', 59, 0),
-(5728, 'content', 'countdownproduct.F9cI8t', 'YToxODp7czo0OiJyYW5kIjtzOjE4OiIwLjY5ODc0NzY5MDk2NDAwNzkiO3M6NjoibW9kdWxlIjtzOjIzOiJjb3VudGRvd25wcm9kdWN0LkY5Y0k4dCI7czo4OiJzYXZlZGF0YSI7czoxOiIxIjtzOjQ6IndrZXkiO3M6MjM6ImNvdW50ZG93bnByb2R1Y3QuRjljSTh0IjtzOjU6Ind0eXBlIjtzOjE2OiJjb3VudGRvd25wcm9kdWN0IjtzOjExOiJ3aWRnZXRfbmFtZSI7czoxMToiY291dGRvd24gdG8iO3M6MTA6InNob3dfdGl0bGUiO3M6MToiMSI7czoxNDoid2lkZ2V0X3RpdGxlXzEiO3M6MTE6ImNvdXRkb3duIHRvIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMiI7czoxMToiY291dGRvd24gdG8iO3M6MTI6ImFkZGl0aW9uX2NscyI7czowOiIiO3M6MTA6InN0YXJ0X2RhdGUiO3M6MTA6IjIwMDktMDItMDMiO3M6ODoiZW5kX2RhdGUiO3M6MTA6IjIwMTktMDctMTciO3M6MTQ6ImNob29zZV9wcm9kdWN0IjtzOjA6IiI7czo3OiJwcm9kdWN0IjthOjU6e2k6MDtzOjI6IjQyIjtpOjE7czoyOiIzMCI7aToyO3M6MjoiMjgiO2k6MztzOjI6IjQxIjtpOjQ7czoyOiI0MCI7fXM6MTM6Imh0bWxjb250ZW50XzEiO3M6NjE6IiZsdDtzcGFuIGNsYXNzPSZxdW90O2JsYWNrJnF1b3Q7Jmd0O2JsYWNrJmx0Oy9zcGFuJmd0OyBmcmlkYXkiO3M6MTM6Imh0bWxjb250ZW50XzIiO3M6NjE6IiZsdDtzcGFuIGNsYXNzPSZxdW90O2JsYWNrJnF1b3Q7Jmd0O2JsYWNrJmx0Oy9zcGFuJmd0OyBmcmlkYXkiO3M6MTE6ImltYWdlX3dpZHRoIjtzOjM6IjIwMCI7czoxMjoiaW1hZ2VfaGVpZ2h0IjtzOjM6IjIwMCI7fQ==', 59, 0),
-(5729, 'content', 'html.YCVMGW', 'YToxMjp7czo0OiJyYW5kIjtzOjE4OiIwLjE3MjQ2NTkyMjA5MDIxMjQiO3M6NjoibW9kdWxlIjtzOjExOiJodG1sLllDVk1HVyI7czo4OiJzYXZlZGF0YSI7czoxOiIxIjtzOjQ6IndrZXkiO3M6MTE6Imh0bWwuWUNWTUdXIjtzOjU6Ind0eXBlIjtzOjQ6Imh0bWwiO3M6MTE6IndpZGdldF9uYW1lIjtzOjE1OiJDdXN0b20gdG9wIGhvbWUiO3M6MTA6InNob3dfdGl0bGUiO3M6MToiMCI7czoxNDoid2lkZ2V0X3RpdGxlXzEiO3M6MTU6IkN1c3RvbSB0b3AgaG9tZSI7czoxNDoid2lkZ2V0X3RpdGxlXzIiO3M6MTU6IkN1c3RvbSB0b3AgaG9tZSI7czoxMjoiYWRkaXRpb25fY2xzIjtzOjA6IiI7czoxMzoiaHRtbGNvbnRlbnRfMSI7czo0NjE6IiZsdDtkaXYgY2xhc3M9JnF1b3Q7cHVsbC1sZWZ0JnF1b3Q7IHN0eWxlPSZxdW90O2NvbG9yOiMwMDAmcXVvdDsmZ3Q7Jmx0O3N0cm9uZyBjbGFzcz0mcXVvdDtyZWQgZm9udC1zaXplLTEzJnF1b3Q7Jmd0O0dFVCBGUkVFIFNISVBQSU5HJmx0Oy9zdHJvbmcmZ3Q7IG9uIGV2ZXJ5IG9yZGVyIG92ZXIgJDE1MC4wMCwgJmx0O3N0cm9uZyZndDtqdXN0IGZvciB0aGUgaG9saWRheXMuJmx0Oy9zdHJvbmcmZ3Q7Jmx0Oy9kaXYmZ3Q7Jmx0O2RpdiBjbGFzcz0mcXVvdDtyZWFkbW9yZSBwdWxsLXJpZ2h0IGJ0bi1saW5rJnF1b3Q7Jmd0OyZsdDthIGhyZWY9JnF1b3Q7IyZxdW90OyB0aXRsZT0mcXVvdDtyZWFkIG1vcmUmcXVvdDsmZ3Q7dmlldyBkZXRhaWwmbHQ7aSBjbGFzcz0mcXVvdDtzcGFjZS1wYWRkaW5nLWw1IGZhIGZhLWFuZ2xlLXJpZ2h0JnF1b3Q7Jmd0OyZsdDsvaSZndDsmbHQ7L2EmZ3Q7Jmx0Oy9kaXYmZ3Q7IjtzOjEzOiJodG1sY29udGVudF8yIjtzOjQ2MToiJmx0O2RpdiBjbGFzcz0mcXVvdDtwdWxsLWxlZnQmcXVvdDsgc3R5bGU9JnF1b3Q7Y29sb3I6IzAwMCZxdW90OyZndDsmbHQ7c3Ryb25nIGNsYXNzPSZxdW90O3JlZCBmb250LXNpemUtMTMmcXVvdDsmZ3Q7R0VUIEZSRUUgU0hJUFBJTkcmbHQ7L3N0cm9uZyZndDsgb24gZXZlcnkgb3JkZXIgb3ZlciAkMTUwLjAwLCAmbHQ7c3Ryb25nJmd0O2p1c3QgZm9yIHRoZSBob2xpZGF5cy4mbHQ7L3N0cm9uZyZndDsmbHQ7L2RpdiZndDsmbHQ7ZGl2IGNsYXNzPSZxdW90O3JlYWRtb3JlIHB1bGwtcmlnaHQgYnRuLWxpbmsmcXVvdDsmZ3Q7Jmx0O2EgaHJlZj0mcXVvdDsjJnF1b3Q7IHRpdGxlPSZxdW90O3JlYWQgbW9yZSZxdW90OyZndDt2aWV3IGRldGFpbCZsdDtpIGNsYXNzPSZxdW90O3NwYWNlLXBhZGRpbmctbDUgZmEgZmEtYW5nbGUtcmlnaHQmcXVvdDsmZ3Q7Jmx0Oy9pJmd0OyZsdDsvYSZndDsmbHQ7L2RpdiZndDsiO30=', 59, 0),
+(5847, 'content', 'listproduct_home1.2iSxBV', 'YToyMTp7czo0OiJyYW5kIjtzOjE3OiIwLjU1NTQ5ODE3MDA0ODczMiI7czo2OiJtb2R1bGUiO3M6MjQ6Imxpc3Rwcm9kdWN0X2hvbWUxLjJpU3hCViI7czo4OiJzYXZlZGF0YSI7czoxOiIxIjtzOjQ6IndrZXkiO3M6MjQ6Imxpc3Rwcm9kdWN0X2hvbWUxLjJpU3hCViI7czo1OiJ3dHlwZSI7czoxNzoibGlzdHByb2R1Y3RfaG9tZTEiO3M6MTE6IndpZGdldF9uYW1lIjtzOjk6Ik3DoXkgQ8OidSI7czoxMDoic2hvd190aXRsZSI7czoxOiIxIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMyI7czo5OiJNw6F5IEPDonUiO3M6MTQ6IndpZGdldF90aXRsZV8xIjtzOjE1OiJCYWJ5ICZhbXA7IGtpZHMiO3M6MTI6ImFkZGl0aW9uX2NscyI7czoxMjoidGV4dC1zdWNjZXNzIjtzOjU6ImxpbmtzIjthOjE6e2k6MztzOjI6Ijc3Ijt9czo5OiJ0aXRsZV8xXzMiO3M6MTE6IkJlc3QgU2VsbGVyIjtzOjk6InRpdGxlXzFfMSI7czoxMDoiQmVzdHNlbGxlciI7czo2OiJzdHlsZTEiO3M6MjI6InBhbmVsLXYyIHBhbmVsLWRlZmF1bHQiO3M6MTE6InByb2R1Y3QxX2lkIjtzOjExOiI0Miw0NCw0Nyw0OCI7czo5OiJ0aXRsZV8yXzMiO3M6NjoiTmV3ZXN0IjtzOjk6InRpdGxlXzJfMSI7czoxMjoiTmV3IEFycml2YWxzIjtzOjY6InN0eWxlMiI7czoyMzoicGFuZWwtdjIgcGFuZWwtc3VjY2VzcyAiO3M6MTE6InByb2R1Y3QyX2lkIjtzOjExOiI0Miw0NCw0Nyw0OCI7czoxMDoiYmFubmVyX2ltZyI7czoyODoiY2F0YWxvZy9HcmFwaGljcy9tYXlfY2F1LmpwZyI7czo5OiJpbWdfY2xhc3MiO3M6NDoibGVmdCI7fQ==', 59, 0),
+(5848, 'content', 'listproduct_home1.pW4xo1', 'YToyMTp7czo0OiJyYW5kIjtzOjE5OiIwLjA4Mjg0NDMzOTQxMzUzNTQyIjtzOjY6Im1vZHVsZSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTEucFc0eG8xIjtzOjg6InNhdmVkYXRhIjtzOjE6IjEiO3M6NDoid2tleSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTEucFc0eG8xIjtzOjU6Ind0eXBlIjtzOjE3OiJMaXN0cHJvZHVjdF9ob21lMSI7czoxMToid2lkZ2V0X25hbWUiO3M6MTA6IkPhuqduIEPDonUiO3M6MTA6InNob3dfdGl0bGUiO3M6MToiMSI7czoxNDoid2lkZ2V0X3RpdGxlXzMiO3M6MTA6IkPhuqduIEPDonUiO3M6MTQ6IndpZGdldF90aXRsZV8xIjtzOjI5OiJjbG90aGluZywgc2hvZXMgJmFtcDsgamV3ZWxyeSI7czoxMjoiYWRkaXRpb25fY2xzIjtzOjk6InRleHQtaW5mbyI7czo1OiJsaW5rcyI7YToxOntpOjA7czoyOiI3NSI7fXM6OToidGl0bGVfMV8zIjtzOjExOiJCZXN0IFNlbGxlciI7czo5OiJ0aXRsZV8xXzEiO3M6ODoiYmVzZWxsZXIiO3M6Njoic3R5bGUxIjtzOjIyOiJwYW5lbC12MiBwYW5lbC1kZWZhdWx0IjtzOjExOiJwcm9kdWN0MV9pZCI7czoyMDoiMzAsMjgsMjksNTAsMzMsNDQsNDMiO3M6OToidGl0bGVfMl8zIjtzOjY6Ik5ld2VzdCI7czo5OiJ0aXRsZV8yXzEiO3M6MTE6Im5ldyBhcml2YWxzIjtzOjY6InN0eWxlMiI7czoyMDoicGFuZWwtdjIgcGFuZWwtaW5mbyAiO3M6MTE6InByb2R1Y3QyX2lkIjtzOjIwOiI0Miw0NCw0Nyw0OCwyMCwzMCw0MCI7czoxMDoiYmFubmVyX2ltZyI7czoyODoiY2F0YWxvZy9HcmFwaGljcy9jYW4gY2F1LmpwZyI7czo5OiJpbWdfY2xhc3MiO3M6NToicmlnaHQiO30=', 59, 0),
+(5844, 'content', 'countdownproduct.F9cI8t', 'YToxODp7czo0OiJyYW5kIjtzOjE4OiIwLjY5ODc0NzY5MDk2NDAwNzkiO3M6NjoibW9kdWxlIjtzOjIzOiJjb3VudGRvd25wcm9kdWN0LkY5Y0k4dCI7czo4OiJzYXZlZGF0YSI7czoxOiIxIjtzOjQ6IndrZXkiO3M6MjM6ImNvdW50ZG93bnByb2R1Y3QuRjljSTh0IjtzOjU6Ind0eXBlIjtzOjE2OiJjb3VudGRvd25wcm9kdWN0IjtzOjExOiJ3aWRnZXRfbmFtZSI7czoxMToiY291dGRvd24gdG8iO3M6MTA6InNob3dfdGl0bGUiO3M6MToiMSI7czoxNDoid2lkZ2V0X3RpdGxlXzEiO3M6MTE6ImNvdXRkb3duIHRvIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMiI7czoxMToiY291dGRvd24gdG8iO3M6MTI6ImFkZGl0aW9uX2NscyI7czowOiIiO3M6MTA6InN0YXJ0X2RhdGUiO3M6MTA6IjIwMDktMDItMDMiO3M6ODoiZW5kX2RhdGUiO3M6MTA6IjIwMTktMDctMTciO3M6MTQ6ImNob29zZV9wcm9kdWN0IjtzOjA6IiI7czo3OiJwcm9kdWN0IjthOjU6e2k6MDtzOjI6IjQyIjtpOjE7czoyOiIzMCI7aToyO3M6MjoiMjgiO2k6MztzOjI6IjQxIjtpOjQ7czoyOiI0MCI7fXM6MTM6Imh0bWxjb250ZW50XzEiO3M6NjE6IiZsdDtzcGFuIGNsYXNzPSZxdW90O2JsYWNrJnF1b3Q7Jmd0O2JsYWNrJmx0Oy9zcGFuJmd0OyBmcmlkYXkiO3M6MTM6Imh0bWxjb250ZW50XzIiO3M6NjE6IiZsdDtzcGFuIGNsYXNzPSZxdW90O2JsYWNrJnF1b3Q7Jmd0O2JsYWNrJmx0Oy9zcGFuJmd0OyBmcmlkYXkiO3M6MTE6ImltYWdlX3dpZHRoIjtzOjM6IjIwMCI7czoxMjoiaW1hZ2VfaGVpZ2h0IjtzOjM6IjIwMCI7fQ==', 59, 0),
+(5845, 'content', 'html.YCVMGW', 'YToxMjp7czo0OiJyYW5kIjtzOjE4OiIwLjE3MjQ2NTkyMjA5MDIxMjQiO3M6NjoibW9kdWxlIjtzOjExOiJodG1sLllDVk1HVyI7czo4OiJzYXZlZGF0YSI7czoxOiIxIjtzOjQ6IndrZXkiO3M6MTE6Imh0bWwuWUNWTUdXIjtzOjU6Ind0eXBlIjtzOjQ6Imh0bWwiO3M6MTE6IndpZGdldF9uYW1lIjtzOjE1OiJDdXN0b20gdG9wIGhvbWUiO3M6MTA6InNob3dfdGl0bGUiO3M6MToiMCI7czoxNDoid2lkZ2V0X3RpdGxlXzEiO3M6MTU6IkN1c3RvbSB0b3AgaG9tZSI7czoxNDoid2lkZ2V0X3RpdGxlXzIiO3M6MTU6IkN1c3RvbSB0b3AgaG9tZSI7czoxMjoiYWRkaXRpb25fY2xzIjtzOjA6IiI7czoxMzoiaHRtbGNvbnRlbnRfMSI7czo0NjE6IiZsdDtkaXYgY2xhc3M9JnF1b3Q7cHVsbC1sZWZ0JnF1b3Q7IHN0eWxlPSZxdW90O2NvbG9yOiMwMDAmcXVvdDsmZ3Q7Jmx0O3N0cm9uZyBjbGFzcz0mcXVvdDtyZWQgZm9udC1zaXplLTEzJnF1b3Q7Jmd0O0dFVCBGUkVFIFNISVBQSU5HJmx0Oy9zdHJvbmcmZ3Q7IG9uIGV2ZXJ5IG9yZGVyIG92ZXIgJDE1MC4wMCwgJmx0O3N0cm9uZyZndDtqdXN0IGZvciB0aGUgaG9saWRheXMuJmx0Oy9zdHJvbmcmZ3Q7Jmx0Oy9kaXYmZ3Q7Jmx0O2RpdiBjbGFzcz0mcXVvdDtyZWFkbW9yZSBwdWxsLXJpZ2h0IGJ0bi1saW5rJnF1b3Q7Jmd0OyZsdDthIGhyZWY9JnF1b3Q7IyZxdW90OyB0aXRsZT0mcXVvdDtyZWFkIG1vcmUmcXVvdDsmZ3Q7dmlldyBkZXRhaWwmbHQ7aSBjbGFzcz0mcXVvdDtzcGFjZS1wYWRkaW5nLWw1IGZhIGZhLWFuZ2xlLXJpZ2h0JnF1b3Q7Jmd0OyZsdDsvaSZndDsmbHQ7L2EmZ3Q7Jmx0Oy9kaXYmZ3Q7IjtzOjEzOiJodG1sY29udGVudF8yIjtzOjQ2MToiJmx0O2RpdiBjbGFzcz0mcXVvdDtwdWxsLWxlZnQmcXVvdDsgc3R5bGU9JnF1b3Q7Y29sb3I6IzAwMCZxdW90OyZndDsmbHQ7c3Ryb25nIGNsYXNzPSZxdW90O3JlZCBmb250LXNpemUtMTMmcXVvdDsmZ3Q7R0VUIEZSRUUgU0hJUFBJTkcmbHQ7L3N0cm9uZyZndDsgb24gZXZlcnkgb3JkZXIgb3ZlciAkMTUwLjAwLCAmbHQ7c3Ryb25nJmd0O2p1c3QgZm9yIHRoZSBob2xpZGF5cy4mbHQ7L3N0cm9uZyZndDsmbHQ7L2RpdiZndDsmbHQ7ZGl2IGNsYXNzPSZxdW90O3JlYWRtb3JlIHB1bGwtcmlnaHQgYnRuLWxpbmsmcXVvdDsmZ3Q7Jmx0O2EgaHJlZj0mcXVvdDsjJnF1b3Q7IHRpdGxlPSZxdW90O3JlYWQgbW9yZSZxdW90OyZndDt2aWV3IGRldGFpbCZsdDtpIGNsYXNzPSZxdW90O3NwYWNlLXBhZGRpbmctbDUgZmEgZmEtYW5nbGUtcmlnaHQmcXVvdDsmZ3Q7Jmx0Oy9pJmd0OyZsdDsvYSZndDsmbHQ7L2RpdiZndDsiO30=', 59, 0),
+(5846, 'content', 'listproduct_home1.0NsoHd', 'YToyMTp7czo0OiJyYW5kIjtzOjE4OiIwLjU3MzMyMTczMTQ5MDcxMDYiO3M6NjoibW9kdWxlIjtzOjI0OiJsaXN0cHJvZHVjdF9ob21lMS4wTnNvSGQiO3M6ODoic2F2ZWRhdGEiO3M6MToiMSI7czo0OiJ3a2V5IjtzOjI0OiJsaXN0cHJvZHVjdF9ob21lMS4wTnNvSGQiO3M6NToid3R5cGUiO3M6MTc6Imxpc3Rwcm9kdWN0X2hvbWUxIjtzOjExOiJ3aWRnZXRfbmFtZSI7czoxMjoiUGjhu6UgS2nhu4duIjtzOjEwOiJzaG93X3RpdGxlIjtzOjE6IjEiO3M6MTQ6IndpZGdldF90aXRsZV8zIjtzOjA6IiI7czoxNDoid2lkZ2V0X3RpdGxlXzEiO3M6MTI6IlBo4bulIEtp4buHbiI7czoxMjoiYWRkaXRpb25fY2xzIjtzOjEyOiJ0ZXh0LXdhcm5pbmciO3M6NToibGlua3MiO2E6NDp7aTowO3M6MjoiNjYiO2k6MTtzOjI6IjY4IjtpOjI7czoyOiI3OCI7aTozO3M6MjoiMzMiO31zOjk6InRpdGxlXzFfMyI7czo1OiJUaXRsZSI7czo5OiJ0aXRsZV8xXzEiO3M6MTA6IkJlc3RzZWxsZXIiO3M6Njoic3R5bGUxIjtzOjIyOiJwYW5lbC12MiBwYW5lbC1kZWZhdWx0IjtzOjExOiJwcm9kdWN0MV9pZCI7czoyMDoiMzAsMjgsMjksNTAsMzMsNDQsNDMiO3M6OToidGl0bGVfMl8zIjtzOjU6IlRpdGxlIjtzOjk6InRpdGxlXzJfMSI7czoxMjoiTmV3IEFycml2YWxzIjtzOjY6InN0eWxlMiI7czoyMzoicGFuZWwtdjIgcGFuZWwtd2FybmluZyAiO3M6MTE6InByb2R1Y3QyX2lkIjtzOjE3OiI0Miw0NCw0Nyw0OCwzMCwyOCI7czoxMDoiYmFubmVyX2ltZyI7czozNjoiY2F0YWxvZy9HcmFwaGljcy9waHUga2llbiBjYXUgY2EuanBnIjtzOjk6ImltZ19jbGFzcyI7czo1OiJyaWdodCI7fQ==', 59, 0),
 (5825, 'content', 'listproduct_home2.7wgrsw', 'YToxNzp7czo0OiJyYW5kIjtzOjE5OiIwLjIxNTIxMzk0OTI5MjM0OTgzIjtzOjY6Im1vZHVsZSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTIuN3dncnN3IjtzOjg6InNhdmVkYXRhIjtzOjE6IjEiO3M6NDoid2tleSI7czoyNDoibGlzdHByb2R1Y3RfaG9tZTIuN3dncnN3IjtzOjU6Ind0eXBlIjtzOjE3OiJsaXN0cHJvZHVjdF9ob21lMiI7czoxMToid2lkZ2V0X25hbWUiO3M6MTU6ImNsb3RoaW5nLCBzaG9lcyI7czoxMDoic2hvd190aXRsZSI7czoxOiIxIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMSI7czoxNToiY2xvdGhpbmcsIHNob2VzIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMiI7czoxNToiY2xvdGhpbmcsIHNob2VzIjtzOjEyOiJhZGRpdGlvbl9jbHMiO3M6ODoicGFuZWwtdjIiO3M6NToibGlua3MiO2E6NTp7aTowO3M6MjoiMzYiO2k6MTtzOjI6IjQ1IjtpOjI7czoyOiI1OSI7aTozO3M6MjoiNjAiO2k6NDtzOjI6IjYxIjt9czo5OiJ0aXRsZV8xXzEiO3M6MTA6IkJlc3RzZWxsZXIiO3M6OToidGl0bGVfMV8yIjtzOjEwOiJCZXN0c2VsbGVyIjtzOjExOiJwcm9kdWN0MV9pZCI7czoyMDoiMzAsNDMsNDYsNDcsNDgsMjAsNDAiO3M6OToidGl0bGVfMl8xIjtzOjEyOiJOZXcgQXJyaXZhbHMiO3M6OToidGl0bGVfMl8yIjtzOjEyOiJOZXcgQXJyaXZhbHMiO3M6MTE6InByb2R1Y3QyX2lkIjtzOjE3OiI0Miw0NCw0Nyw0OCwyNSwyMiI7fQ==', 83, 0),
 (5824, 'content', 'listproduct_home2.22UAd8', 'YToxNzp7czo0OiJyYW5kIjtzOjE4OiIwLjY1MTk1OTQ0MzY1NTA4NDIiO3M6NjoibW9kdWxlIjtzOjI0OiJsaXN0cHJvZHVjdF9ob21lMi4yMlVBZDgiO3M6ODoic2F2ZWRhdGEiO3M6MToiMSI7czo0OiJ3a2V5IjtzOjI0OiJsaXN0cHJvZHVjdF9ob21lMi4yMlVBZDgiO3M6NToid3R5cGUiO3M6MTc6Imxpc3Rwcm9kdWN0X2hvbWUyIjtzOjExOiJ3aWRnZXRfbmFtZSI7czoxNjoiQmFieSAmYW1wOyBraWRzICI7czoxMDoic2hvd190aXRsZSI7czoxOiIxIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMSI7czoxNjoiQmFieSAmYW1wOyBraWRzICI7czoxNDoid2lkZ2V0X3RpdGxlXzIiO3M6MTY6IkJhYnkgJmFtcDsga2lkcyAiO3M6MTI6ImFkZGl0aW9uX2NscyI7czowOiIiO3M6NToibGlua3MiO2E6Njp7aTowO3M6MjoiMzYiO2k6MTtzOjI6IjQ1IjtpOjI7czoyOiI0NiI7aTozO3M6MjoiNjAiO2k6NDtzOjI6IjYxIjtpOjU7czoyOiIyNSI7fXM6OToidGl0bGVfMV8xIjtzOjEwOiJCZXN0c2VsbGVyIjtzOjk6InRpdGxlXzFfMiI7czoxMDoiQmVzdHNlbGxlciI7czoxMToicHJvZHVjdDFfaWQiO3M6MTQ6IjI5LDUwLDQ4LDMwLDMzIjtzOjk6InRpdGxlXzJfMSI7czoxMjoiTmV3IEFycml2YWxzIjtzOjk6InRpdGxlXzJfMiI7czoxMjoiTmV3IEFycml2YWxzIjtzOjExOiJwcm9kdWN0Ml9pZCI7czoxNzoiNDIsNDQsNDcsNDgsMjAsMjMiO30=', 83, 0),
 (5822, 'content', 'image.tZqfYO', 'YToxNjp7czo0OiJyYW5kIjtzOjE4OiIwLjMyNjk1NTE2NTY2NjMwODIiO3M6NjoibW9kdWxlIjtzOjEyOiJpbWFnZS50WnFmWU8iO3M6ODoic2F2ZWRhdGEiO3M6MToiMSI7czo0OiJ3a2V5IjtzOjEyOiJpbWFnZS50WnFmWU8iO3M6NToid3R5cGUiO3M6NToiaW1hZ2UiO3M6MTE6IndpZGdldF9uYW1lIjtzOjEwOiJpbWcyLWhvbWUyIjtzOjEwOiJzaG93X3RpdGxlIjtzOjE6IjAiO3M6MTQ6IndpZGdldF90aXRsZV8xIjtzOjEwOiJpbWcyLWhvbWUyIjtzOjE0OiJ3aWRnZXRfdGl0bGVfMiI7czoxMDoiaW1nMi1ob21lMiI7czoxMjoiYWRkaXRpb25fY2xzIjtzOjk6ImVmZmVjdC12MyI7czo5OiJpbWFnZWZpbGUiO3M6MzI6ImNhdGFsb2cvZGVtby9iYW5uZXJzL2Jhbm5lcjYuanBnIjtzOjQ6InNpemUiO3M6MDoiIjtzOjk6ImFuaW1hdGlvbiI7czoxOiIxIjtzOjk6ImFsaWdubWVudCI7czo2OiJjZW50ZXIiO3M6NzoiaXNwb3B1cCI7czoxOiIxIjtzOjQ6ImxpbmsiO3M6MToiIyI7fQ==', 83, 0),
@@ -3078,19 +3030,19 @@ CREATE TABLE `oc_product` (
 
 INSERT INTO `oc_product` (`product_id`, `model`, `sku`, `upc`, `ean`, `jan`, `isbn`, `mpn`, `location`, `quantity`, `stock_status_id`, `image`, `manufacturer_id`, `shipping`, `price`, `points`, `tax_class_id`, `date_available`, `weight`, `weight_class_id`, `length`, `width`, `height`, `length_class_id`, `subtract`, `minimum`, `sort_order`, `status`, `viewed`, `date_added`, `date_modified`) VALUES
 (28, 'Product 1', '', '', '', '', '', '', '', 939, 7, 'catalog/demo/product/product1.jpg', 5, 1, '100.0000', 200, 9, '2009-02-03', '146.40000000', 2, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 16:06:50', '2015-06-26 14:55:30'),
-(29, 'Product 2', '', '', '', '', '', '', '', 999, 6, 'catalog/demo/product/product2.jpg', 6, 1, '279.9900', 0, 9, '2009-02-03', '133.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 3, 1, 1, 0, 1, 0, '2009-02-03 16:42:17', '2015-06-27 16:21:16'),
-(30, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'catalog/demo/product/product3.jpg', 9, 1, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 16:59:00', '2015-05-25 02:07:10'),
+(29, 'Product 2', '', '', '', '', '', '', '', 999, 6, 'catalog/demo/product/product2.jpg', 6, 1, '279.9900', 0, 9, '2009-02-03', '133.00000000', 2, '0.00000000', '0.00000000', '0.00000000', 3, 1, 1, 0, 1, 1, '2009-02-03 16:42:17', '2016-12-11 23:28:19'),
+(30, 'Product 3', '', '', '', '', '', '', '', 7, 6, 'catalog/demo/product/product3.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 16:59:00', '2016-12-11 23:29:06'),
 (31, 'Product 4', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/product/product4.jpg', 0, 1, '80.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 3, 1, 1, 0, 1, 0, '2009-02-03 17:00:10', '2015-05-26 15:22:52'),
 (32, 'Product 5', '', '', '', '', '', '', '', 999, 6, 'catalog/demo/product/product5.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 17:07:26', '2015-05-26 14:49:15'),
 (33, 'Product 6', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/product/product6.jpg', 0, 1, '200.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 17:08:31', '2015-05-26 14:49:34'),
 (34, 'Product 7', '', '', '', '', '', '', '', 1000, 6, 'catalog/demo/product/product7.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 18:07:54', '2015-05-26 14:49:52'),
-(35, 'Product 8', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/product/product8.jpg', 0, 0, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 18:08:31', '2015-05-26 14:50:08'),
+(35, 'Product 8', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/product/product8.jpg', 9, 0, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 1, '2009-02-03 18:08:31', '2016-12-11 23:30:17'),
 (36, 'Product 9', '', '', '', '', '', '', '', 994, 6, 'catalog/demo/product/product9.jpg', 8, 0, '100.0000', 100, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 18:09:19', '2015-05-26 14:50:26'),
 (40, 'product 11', '', '', '', '', '', '', '', 970, 5, 'catalog/demo/product/product10.jpg', 8, 1, '101.0000', 0, 9, '2009-02-03', '10.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 21:07:12', '2015-06-26 14:57:31'),
 (41, 'Product 14', '', '', '', '', '', '', '', 977, 5, 'catalog/demo/product/product11.jpg', 8, 1, '100.0000', 0, 9, '2009-02-03', '5.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 21:07:26', '2015-06-26 14:57:11'),
 (42, 'Product 15', '', '', '', '', '', '', '', 990, 5, 'catalog/demo/product/product12.jpg', 8, 1, '100.0000', 400, 9, '2009-02-04', '12.50000000', 1, '1.00000000', '2.00000000', '3.00000000', 1, 1, 1, 0, 1, 0, '2009-02-03 21:07:37', '2015-06-26 15:02:53'),
 (43, 'Product 16', '', '', '', '', '', '', '', 929, 5, 'catalog/demo/product/product13.jpg', 8, 0, '500.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:07:49', '2015-05-26 14:46:56'),
-(44, 'Product 17', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/product/product14.jpg', 8, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:00', '2015-06-26 15:03:16'),
+(44, 'Product 17', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/product/product14.jpg', 8, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:00', '2016-12-11 23:29:38'),
 (45, 'Product 18', '', '', '', '', '', '', '', 998, 5, 'catalog/demo/product/product15.jpg', 8, 1, '2000.0000', 0, 0, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:17', '2015-05-26 14:47:42'),
 (46, 'Product 19', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/product/product16.jpg', 10, 1, '1000.0000', 0, 9, '2009-02-03', '0.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 2, 1, 1, 0, 1, 0, '2009-02-03 21:08:29', '2015-05-26 14:47:58'),
 (47, 'Product 21', '', '', '', '', '', '', '', 1000, 5, 'catalog/demo/product/product17.jpg', 7, 1, '100.0000', 400, 9, '2009-02-03', '1.00000000', 1, '0.00000000', '0.00000000', '0.00000000', 1, 0, 1, 0, 1, 0, '2009-02-03 21:08:40', '2015-05-26 15:23:53'),
@@ -3153,7 +3105,7 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (28, 1, 'Lorem ipsum with Metal betical 1', '&lt;p&gt;\r\n	HTC Touch - in High Definition. Watch music videos and streaming content in awe-inspiring high definition clarity for a mobile experience you never thought possible. Seductively sleek, the HTC Touch HD provides the next generation of mobile functionality, all at a simple touch. Fully integrated with Windows Mobile Professional 6.1, ultrafast 3.5G, GPS, 5MP camera, plus lots more - all delivered on a breathtakingly crisp 3.8&quot; WVGA touchscreen - you can take control of your mobile world with the HTC Touch HD.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Processor Qualcomm® MSM 7201A™ 528 MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile® 6.1 Professional Operating System&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Memory: 512 MB ROM, 288 MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Dimensions: 115 mm x 62.8 mm x 12 mm / 146.4 grams&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.8-inch TFT-LCD flat touch-sensitive screen with 480 x 800 WVGA resolution&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/WCDMA: Europe/Asia: 900/2100 MHz; Up to 2 Mbps up-link and 7.2 Mbps down-link speeds&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM/GPRS/EDGE: Europe/Asia: 850/900/1800/1900 MHz (Band frequency, HSUPA availability, and data speed are operator dependent.)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Device Control via HTC TouchFLO™ 3D &amp;amp; Touch-sensitive front panel buttons&lt;/li&gt;\r\n	&lt;li&gt;\r\n		GPS and A-GPS ready&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth® 2.0 with Enhanced Data Rate and A2DP for wireless stereo headsets&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Wi-Fi®: IEEE 802.11 b/g&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HTC ExtUSB™ (11-pin mini-USB 2.0)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		5 megapixel color camera with auto focus&lt;/li&gt;\r\n	&lt;li&gt;\r\n		VGA CMOS color camera&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in 3.5 mm audio jack, microphone, speaker, and FM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Ring tone formats: AAC, AAC+, eAAC+, AMR-NB, AMR-WB, QCP, MP3, WMA, WAV&lt;/li&gt;\r\n	&lt;li&gt;\r\n		40 polyphonic and standard MIDI format 0 and 1 (SMF)/SP MIDI&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Rechargeable Lithium-ion or Lithium-ion polymer 1350 mAh battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Expansion Slot: microSD™ memory card (SD 2.0 compatible)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		AC Adapter Voltage range/frequency: 100 ~ 240V AC, 50/60 Hz DC output: 5V and 1A&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Special Features: FM Radio, G-Sensor&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', 'Lorem ipsum with Metal betical 1', '', ''),
 (44, 1, 'Lorem ipsum with Metal betical 14', '&lt;div&gt;\r\n	MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don’t lose inches and pounds overnight. It’s the result of rethinking conventions. Of multiple wireless innovations. And of breakthrough design. With MacBook Air, mobile computing suddenly has a new standard.&lt;/div&gt;\r\n', '', 'Lorem ipsum with Metal betical 14', '', ''),
 (34, 3, 'Lorem ipsum with Metal 7', '&lt;div&gt;\r\n	&lt;strong&gt;Born to be worn.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Clip on the worlds most wearable music player and take up to 240 songs with you anywhere. Choose from five colors including four new hues to make your musical fashion statement.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Random meets rhythm.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With iTunes autofill, iPod shuffle can deliver a new musical experience every time you sync. For more randomness, you can shuffle songs during playback with the slide of a switch.&lt;/p&gt;\r\n	&lt;strong&gt;Everything is easy.&lt;/strong&gt;\r\n	&lt;p&gt;\r\n		Charge and sync with the included USB dock. Operate the iPod shuffle controls with one hand. Enjoy up to 12 hours straight of skip-free music playback.&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', '', '', ''),
-(35, 3, 'Lorem ipsum with Metal 8', '&lt;p&gt;\r\n	Product 8&lt;/p&gt;\r\n', '', '', '', ''),
+(35, 3, 'Máy Câu Nguyên Hộp', '&lt;p&gt;Mới 100%&lt;/p&gt;\r\n', '', 'Máy Câu Nguyên Hộp', '', ''),
 (36, 3, 'Lorem ipsum with Metal 9', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Video in your pocket.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Its the small iPod with one very big idea: video. The worlds most popular music player now lets you enjoy movies, TV shows, and more on a two-inch display thats 65% brighter than before.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;Sleek and colorful.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		With an anodized aluminum and polished stainless steel enclosure and a choice of five colors, iPod nano is dressed to impress.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;strong&gt;iTunes.&lt;/strong&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Available as a free download, iTunes makes it easy to browse and buy millions of songs, movies, TV shows, audiobooks, and games and download free podcasts all at the iTunes Store. And you can import your own music, manage your whole media library, and sync your iPod or iPhone with ease.&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', '', '', ''),
 (47, 1, 'Lorem ipsum with Metal 17', '&lt;p&gt;\r\n	Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor features best-in-class performance and presentation features on a huge wide-aspect screen while letting you work as comfortably as possible - you might even forget you\'re at the office&lt;/p&gt;\r\n', '', 'Lorem ipsum with Metal 17', '', ''),
 (33, 3, 'Lorem ipsum with Metal 6', '&lt;div&gt;\r\n	Imagine the advantages of going big without slowing down. The big 19&quot; 941BW monitor combines wide aspect ratio with fast pixel response time, for bigger images, more room to work and crisp motion. In addition, the exclusive MagicBright 2, MagicColor and MagicTune technologies help deliver the ideal image in every situation, while sleek, narrow bezels and adjustable stands deliver style just the way you want it. With the Samsung 941BW widescreen analog/digital LCD monitor, it\'s not hard to imagine.&lt;/div&gt;\r\n', '', '', '', ''),
@@ -3165,19 +3117,19 @@ INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `desc
 (49, 3, 'Lorem ipsum with Metal 19', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world’s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 – includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick – a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader’s Hub, Music Hub and Samsung Mini Apps Tray – which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;äö&lt;/p&gt;\r\n', '', '', 'Watchs white', ''),
 (43, 3, 'Lorem ipsum with Metal 13', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Intel Core 2 Duo processor&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;1GB memory, larger hard drives&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect for running more of your favorite applications and storing growing media collections.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Sleek, 1.08-inch-thin design&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally trips on the cord.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Built-in iSight camera&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or take fun pictures with Photo Booth&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', '', '', ''),
 (42, 1, 'Lorem ipsum with Metal betical 12', '&lt;p&gt;\r\n	The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there\'s no limit to what you can achieve. &lt;br&gt;\r\n	&lt;br&gt;\r\n	The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it\'s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br&gt;\r\n	&lt;br&gt;\r\n	Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple\'s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br&gt;\r\n	&lt;br&gt;\r\n	Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br&gt;\r\n	&lt;br&gt;\r\n	The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br&gt;\r\n	&lt;/p&gt;\r\n\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		170° horizontal; 170° vertical&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br&gt;\r\n	Cable&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Operating temperature: 50° to 95° F (10° to 35° C)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Storage temperature: -40° to 116° F (-40° to 47° C)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		TCO \'03&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n\r\n&lt;/ul&gt;', '', 'Lorem ipsum with Metal betical 12', '', ''),
-(29, 1, 'Lorem ipsum with Metal 2', '&lt;p&gt;\r\n	Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email, stay on top of appointments and contacts, and use Wi-Fi or GPS when you’re out and about. Then watch a video on YouTube, catch up with news and sports on the web, or listen to a few songs. Balance your work and play the way you like it, with the Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile® 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Qualcomm® MSM7201 400MHz Processor&lt;/li&gt;\r\n	&lt;li&gt;\r\n		320x320 transflective colour TFT touchscreen&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Tri-band UMTS — 850MHz, 1900MHz, 2100MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM — 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g with WPA, WPA2, and 801.1x authentication&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth Version: 2.0 + Enhanced Data Rate&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256MB storage (100MB user available), 128MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2.0 megapixel camera, up to 8x digital zoom and video capture&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Removable, rechargeable 1500mAh lithium-ion battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Up to 5.0 hours talk time and up to 250 hours standby&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroSDHC card expansion (up to 32GB supported)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 for synchronization and charging&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.5mm stereo headset jack&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60mm (W) x 114mm (L) x 13.5mm (D) / 133g&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', 'Lorem ipsum with Metal 2', '', ''),
-(30, 3, 'Ignite Women\'s Running Shoes  ', '&lt;p&gt;\r\n	Canon\'s press material for the EOS 5D states that it \'defines (a) new D-SLR category\', while we\'re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably \'chunkier\'). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR\'s, an important difference when compared to the latter is that the EOS 5D doesn\'t have any environmental seals. While Canon don\'t specifically refer to the EOS 5D as a \'professional\' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they\'ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n', '', '', '', ''),
+(29, 3, 'Daiwa Cần Lure', '&lt;p&gt;\r\n	Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email, stay on top of appointments and contacts, and use Wi-Fi or GPS when you’re out and about. Then watch a video on YouTube, catch up with news and sports on the web, or listen to a few songs. Balance your work and play the way you like it, with the Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile® 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Qualcomm® MSM7201 400MHz Processor&lt;/li&gt;\r\n	&lt;li&gt;\r\n		320x320 transflective colour TFT touchscreen&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Tri-band UMTS — 850MHz, 1900MHz, 2100MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM — 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g with WPA, WPA2, and 801.1x authentication&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth Version: 2.0 + Enhanced Data Rate&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256MB storage (100MB user available), 128MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2.0 megapixel camera, up to 8x digital zoom and video capture&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Removable, rechargeable 1500mAh lithium-ion battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Up to 5.0 hours talk time and up to 250 hours standby&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroSDHC card expansion (up to 32GB supported)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 for synchronization and charging&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.5mm stereo headset jack&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60mm (W) x 114mm (L) x 13.5mm (D) / 133g&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', 'Daiwa Cần Lure', '', ''),
+(30, 3, 'Shimano carbon', '&lt;p&gt;\r\n	Canon\'s press material for the EOS 5D states that it \'defines (a) new D-SLR category\', while we\'re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably \'chunkier\'). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR\'s, an important difference when compared to the latter is that the EOS 5D doesn\'t have any environmental seals. While Canon don\'t specifically refer to the EOS 5D as a \'professional\' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they\'ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n', '', 'Shimano carbon', '', ''),
 (31, 1, 'Lorem ipsum with Metal 4', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon\'s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br&gt;\r\n		&lt;br&gt;\r\n		Similar to the D3, the D300 features Nikon\'s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera\'s new features. The D300 features a new 51-point autofocus system with Nikon\'s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera\'s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br&gt;\r\n		&lt;br&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br&gt;\r\n		&lt;br&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon\'s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', 'Lorem ipsum with Metal 4', '', ''),
-(30, 1, 'Ignite Women\'s Running Shoes  ', '&lt;p&gt;\r\n	Canon\'s press material for the EOS 5D states that it \'defines (a) new D-SLR category\', while we\'re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably \'chunkier\'). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR\'s, an important difference when compared to the latter is that the EOS 5D doesn\'t have any environmental seals. While Canon don\'t specifically refer to the EOS 5D as a \'professional\' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they\'ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n', '', 'Ignite Women\'s Running Shoes  ', '', ''),
+(30, 1, 'Shimano carbon', '&lt;p&gt;\r\n	Canon\'s press material for the EOS 5D states that it \'defines (a) new D-SLR category\', while we\'re not typically too concerned with marketing talk this particular statement is clearly pretty accurate. The EOS 5D is unlike any previous digital SLR in that it combines a full-frame (35 mm sized) high resolution sensor (12.8 megapixels) with a relatively compact body (slightly larger than the EOS 20D, although in your hand it feels noticeably \'chunkier\'). The EOS 5D is aimed to slot in between the EOS 20D and the EOS-1D professional digital SLR\'s, an important difference when compared to the latter is that the EOS 5D doesn\'t have any environmental seals. While Canon don\'t specifically refer to the EOS 5D as a \'professional\' digital SLR it will have obvious appeal to professionals who want a high quality digital SLR in a body lighter than the EOS-1D. It will also no doubt appeal to current EOS 20D owners (although lets hope they\'ve not bought too many EF-S lenses...) äë&lt;/p&gt;\r\n', '', 'Shimano carbon', '', ''),
 (31, 3, 'Lorem ipsum with Metal 4', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		Engineered with pro-level features and performance, the 12.3-effective-megapixel D300 combines brand new technologies with advanced features inherited from Nikon\'s newly announced D3 professional digital SLR camera to offer serious photographers remarkable performance combined with agility.&lt;br&gt;\r\n		&lt;br&gt;\r\n		Similar to the D3, the D300 features Nikon\'s exclusive EXPEED Image Processing System that is central to driving the speed and processing power needed for many of the camera\'s new features. The D300 features a new 51-point autofocus system with Nikon\'s 3D Focus Tracking feature and two new LiveView shooting modes that allow users to frame a photograph using the camera\'s high-resolution LCD monitor. The D300 shares a similar Scene Recognition System as is found in the D3; it promises to greatly enhance the accuracy of autofocus, autoexposure, and auto white balance by recognizing the subject or scene being photographed and applying this information to the calculations for the three functions.&lt;br&gt;\r\n		&lt;br&gt;\r\n		The D300 reacts with lightning speed, powering up in a mere 0.13 seconds and shooting with an imperceptible 45-millisecond shutter release lag time. The D300 is capable of shooting at a rapid six frames per second and can go as fast as eight frames per second when using the optional MB-D10 multi-power battery pack. In continuous bursts, the D300 can shoot up to 100 shots at full 12.3-megapixel resolution. (NORMAL-LARGE image setting, using a SanDisk Extreme IV 1GB CompactFlash card.)&lt;br&gt;\r\n		&lt;br&gt;\r\n		The D300 incorporates a range of innovative technologies and features that will significantly improve the accuracy, control, and performance photographers can get from their equipment. Its new Scene Recognition System advances the use of Nikon\'s acclaimed 1,005-segment sensor to recognize colors and light patterns that help the camera determine the subject and the type of scene being photographed before a picture is taken. This information is used to improve the accuracy of autofocus, autoexposure, and auto white balance functions in the D300. For example, the camera can track moving subjects better and by identifying them, it can also automatically select focus points faster and with greater accuracy. It can also analyze highlights and more accurately determine exposure, as well as infer light sources to deliver more accurate white balance detection.&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', '', '', ''),
-(29, 3, 'Lorem ipsum with Metal 2', '&lt;p&gt;\r\n	Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email, stay on top of appointments and contacts, and use Wi-Fi or GPS when you’re out and about. Then watch a video on YouTube, catch up with news and sports on the web, or listen to a few songs. Balance your work and play the way you like it, with the Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile® 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Qualcomm® MSM7201 400MHz Processor&lt;/li&gt;\r\n	&lt;li&gt;\r\n		320x320 transflective colour TFT touchscreen&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Tri-band UMTS — 850MHz, 1900MHz, 2100MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM — 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g with WPA, WPA2, and 801.1x authentication&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth Version: 2.0 + Enhanced Data Rate&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256MB storage (100MB user available), 128MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2.0 megapixel camera, up to 8x digital zoom and video capture&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Removable, rechargeable 1500mAh lithium-ion battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Up to 5.0 hours talk time and up to 250 hours standby&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroSDHC card expansion (up to 32GB supported)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 for synchronization and charging&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.5mm stereo headset jack&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60mm (W) x 114mm (L) x 13.5mm (D) / 133g&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', '', '', ''),
+(29, 1, 'Daiwa Cần Lure', '&lt;p&gt;\r\n	Redefine your workday with the Palm Treo Pro smartphone. Perfectly balanced, you can respond to business and personal email, stay on top of appointments and contacts, and use Wi-Fi or GPS when you’re out and about. Then watch a video on YouTube, catch up with news and sports on the web, or listen to a few songs. Balance your work and play the way you like it, with the Palm Treo Pro.&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;\r\n&lt;ul&gt;\r\n	&lt;li&gt;\r\n		Windows Mobile® 6.1 Professional Edition&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Qualcomm® MSM7201 400MHz Processor&lt;/li&gt;\r\n	&lt;li&gt;\r\n		320x320 transflective colour TFT touchscreen&lt;/li&gt;\r\n	&lt;li&gt;\r\n		HSDPA/UMTS/EDGE/GPRS/GSM radio&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Tri-band UMTS — 850MHz, 1900MHz, 2100MHz&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Quad-band GSM — 850/900/1800/1900&lt;/li&gt;\r\n	&lt;li&gt;\r\n		802.11b/g with WPA, WPA2, and 801.1x authentication&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Built-in GPS&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Bluetooth Version: 2.0 + Enhanced Data Rate&lt;/li&gt;\r\n	&lt;li&gt;\r\n		256MB storage (100MB user available), 128MB RAM&lt;/li&gt;\r\n	&lt;li&gt;\r\n		2.0 megapixel camera, up to 8x digital zoom and video capture&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Removable, rechargeable 1500mAh lithium-ion battery&lt;/li&gt;\r\n	&lt;li&gt;\r\n		Up to 5.0 hours talk time and up to 250 hours standby&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroSDHC card expansion (up to 32GB supported)&lt;/li&gt;\r\n	&lt;li&gt;\r\n		MicroUSB 2.0 for synchronization and charging&lt;/li&gt;\r\n	&lt;li&gt;\r\n		3.5mm stereo headset jack&lt;/li&gt;\r\n	&lt;li&gt;\r\n		60mm (W) x 114mm (L) x 13.5mm (D) / 133g&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', '', 'Daiwa Cần Lure', '', ''),
 (43, 1, 'Lorem ipsum with Metal 13', '&lt;div&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Intel Core 2 Duo processor&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, the new MacBook is the fastest ever.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;1GB memory, larger hard drives&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		The new MacBook now comes with 1GB of memory standard and larger hard drives for the entire line perfect for running more of your favorite applications and storing growing media collections.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Sleek, 1.08-inch-thin design&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		MacBook makes it easy to hit the road thanks to its tough polycarbonate case, built-in wireless technologies, and innovative MagSafe Power Adapter that releases automatically if someone accidentally trips on the cord.&lt;/p&gt;\r\n	&lt;p&gt;\r\n		&lt;b&gt;Built-in iSight camera&lt;/b&gt;&lt;/p&gt;\r\n	&lt;p&gt;\r\n		Right out of the box, you can have a video chat with friends or family,2 record a video at your desk, or take fun pictures with Photo Booth&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', 'Lorem ipsum with Metal 13', '', ''),
 (48, 1, 'Lorem ipsum with Metal 18', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;More room to move.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combination wherever you go.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Cover Flow.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Browse through your music collection by flipping through album art. Select an album to turn it over and see the track list.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Enhanced interface.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Experience a whole new way to browse and view your music and video.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;strong&gt;Sleeker design.&lt;/strong&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Beautiful, durable, and sleeker than ever, iPod classic now features an anodized aluminum and polished stainless steel enclosure with rounded edges.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', 'Lorem ipsum with Metal 18', '', ''),
 (49, 1, 'Lorem ipsum with Metal 19', '&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1, is the world’s thinnest tablet, measuring 8.6 mm thickness, running with Android 3.0 Honeycomb OS on a 1GHz dual-core Tegra 2 processor, similar to its younger brother Samsung Galaxy Tab 8.9.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 gives pure Android 3.0 experience, adding its new TouchWiz UX or TouchWiz 4.0 – includes a live panel, which lets you to customize with different content, such as your pictures, bookmarks, and social feeds, sporting a 10.1 inches WXGA capacitive touch screen with 1280 x 800 pixels of resolution, equipped with 3 megapixel rear camera with LED flash and a 2 megapixel front camera, HSPA+ connectivity up to 21Mbps, 720p HD video recording capability, 1080p HD playback, DLNA support, Bluetooth 2.1, USB 2.0, gyroscope, Wi-Fi 802.11 a/b/g/n, micro-SD slot, 3.5mm headphone jack, and SIM slot, including the Samsung Stick – a Bluetooth microphone that can be carried in a pocket like a pen and sound dock with powered subwoofer.&lt;/p&gt;\r\n&lt;p&gt;\r\n	Samsung Galaxy Tab 10.1 will come in 16GB / 32GB / 64GB verities and pre-loaded with Social Hub, Reader’s Hub, Music Hub and Samsung Mini Apps Tray – which gives you access to more commonly used apps to help ease multitasking and it is capable of Adobe Flash Player 10.2, powered by 6860mAh battery that gives you 10hours of video-playback time.&amp;nbsp;äö&lt;/p&gt;\r\n', '', 'Lorem ipsum with Metal 19', 'Watchs white', ''),
 (50, 1, 'Lorem ipsum with Metal 20', '&lt;p class=&quot;intro&quot;&gt;\r\n	iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name or number in your address book, a favorites list, or a call log. It also automatically syncs all your contacts from a PC, Mac, or Internet service. And it lets you select and listen to voicemail messages in whatever order you want just like email.&lt;/p&gt;\r\n', 'Watchs Black', 'Lorem ipsum with Metal 20', 'Watchs Black', 'Watchs Black'),
 (45, 1, 'Lorem ipsum with Metal 15', '&lt;div class=&quot;cpt_product_description &quot;&gt;\r\n	&lt;div&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Latest Intel mobile architecture&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Powered by the most advanced mobile processors from Intel, the new Core 2 Duo MacBook Pro is over 50% faster than the original Core Duo MacBook Pro and now supports up to 4GB of RAM.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Leading-edge graphics&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			The NVIDIA GeForce 8600M GT delivers exceptional graphics processing power. For the ultimate creative canvas, you can even configure the 17-inch model with a 1920-by-1200 resolution display.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Designed for life on the road&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Innovations such as a magnetic power connection and an illuminated keyboard with ambient light sensor put the MacBook Pro in a class by itself.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Connect. Create. Communicate.&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Quickly set up a video conference with the built-in iSight camera. Control presentations and media from up to 30 feet away with the included Apple Remote. Connect to high-bandwidth peripherals with FireWire 800 and DVI.&lt;/p&gt;\r\n		&lt;p&gt;\r\n			&lt;b&gt;Next-generation wireless&lt;/b&gt;&lt;/p&gt;\r\n		&lt;p&gt;\r\n			Featuring 802.11n wireless technology, the MacBook Pro delivers up to five times the performance and up to twice the range of previous-generation technologies.&lt;/p&gt;\r\n	&lt;/div&gt;\r\n&lt;/div&gt;\r\n&lt;!-- cpt_container_end --&gt;', '', 'Lorem ipsum with Metal 15', '', ''),
 (46, 1, 'Lorem ipsum with Metal 16', '&lt;div&gt;\r\n	Unprecedented power. The next generation of processing technology has arrived. Built into the newest VAIO notebooks lies Intel\'s latest, most powerful innovation yet: Intel® Centrino® 2 processor technology. Boasting incredible speed, expanded wireless connectivity, enhanced multimedia support and greater energy efficiency, all the high-performance essentials are seamlessly combined into a single chip.&lt;/div&gt;\r\n', '', 'Lorem ipsum with Metal 16', '', ''),
-(44, 3, 'Lorem ipsum with Metal betical 14', '&lt;div&gt;\r\n	MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don’t lose inches and pounds overnight. It’s the result of rethinking conventions. Of multiple wireless innovations. And of breakthrough design. With MacBook Air, mobile computing suddenly has a new standard.&lt;/div&gt;\r\n', '', '', '', ''),
+(44, 3, 'Cước 50m', '&lt;div&gt;\r\n	MacBook Air is ultrathin, ultraportable, and ultra unlike anything else. But you don’t lose inches and pounds overnight. It’s the result of rethinking conventions. Of multiple wireless innovations. And of breakthrough design. With MacBook Air, mobile computing suddenly has a new standard.&lt;/div&gt;\r\n', '', 'Cước 50m', '', ''),
 (47, 3, 'Lorem ipsum with Metal 17', '&lt;p&gt;\r\n	Stop your co-workers in their tracks with the stunning new 30-inch diagonal HP LP3065 Flat Panel Monitor. This flagship monitor features best-in-class performance and presentation features on a huge wide-aspect screen while letting you work as comfortably as possible - you might even forget you\'re at the office&lt;/p&gt;\r\n', '', '', '', '');
 INSERT INTO `oc_product_description` (`product_id`, `language_id`, `name`, `description`, `tag`, `meta_title`, `meta_description`, `meta_keyword`) VALUES
 (42, 3, 'Lorem ipsum with Metal betical 12', '&lt;p&gt;\r\n	The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed specifically for the creative professional, this display provides more space for easier access to all the tools and palettes needed to edit, format and composite your work. Combine this display with a Mac Pro, MacBook Pro, or PowerMac G5 and there\'s no limit to what you can achieve. &lt;br&gt;\r\n	&lt;br&gt;\r\n	The Cinema HD features an active-matrix liquid crystal display that produces flicker-free images that deliver twice the brightness, twice the sharpness and twice the contrast ratio of a typical CRT display. Unlike other flat panels, it\'s designed with a pure digital interface to deliver distortion-free images that never need adjusting. With over 4 million digital pixels, the display is uniquely suited for scientific and technical applications such as visualizing molecular structures or analyzing geological data. &lt;br&gt;\r\n	&lt;br&gt;\r\n	Offering accurate, brilliant color performance, the Cinema HD delivers up to 16.7 million colors across a wide gamut allowing you to see subtle nuances between colors from soft pastels to rich jewel tones. A wide viewing angle ensures uniform color from edge to edge. Apple\'s ColorSync technology allows you to create custom profiles to maintain consistent color onscreen and in print. The result: You can confidently use this display in all your color-critical applications. &lt;br&gt;\r\n	&lt;br&gt;\r\n	Housed in a new aluminum design, the display has a very thin bezel that enhances visual accuracy. Each display features two FireWire 400 ports and two USB 2.0 ports, making attachment of desktop peripherals, such as iSight, iPod, digital and still cameras, hard drives, printers and scanners, even more accessible and convenient. Taking advantage of the much thinner and lighter footprint of an LCD, the new displays support the VESA (Video Electronics Standards Association) mounting interface standard. Customers with the optional Cinema Display VESA Mount Adapter kit gain the flexibility to mount their display in locations most appropriate for their work environment. &lt;br&gt;\r\n	&lt;br&gt;\r\n	The Cinema HD features a single cable design with elegant breakout for the USB 2.0, FireWire 400 and a pure digital connection using the industry standard Digital Video Interface (DVI) interface. The DVI connection allows for a direct pure-digital connection.&lt;br&gt;\r\n	&lt;/p&gt;\r\n\r\n&lt;h3&gt;\r\n	Features:&lt;/h3&gt;\r\n\r\n&lt;p&gt;\r\n	Unrivaled display performance&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Wide-format design for simultaneous display of two full pages of text and graphics.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Lightning-fast pixel response for full-motion digital video playback.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Support for 16.7 million saturated colors, for use in all graphics-intensive applications.&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	Simple setup and operation&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Single cable with elegant breakout for connection to DVI, USB and FireWire ports&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Built-in two-port USB 2.0 hub for easy connection of desktop peripheral devices.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports to support iSight and other desktop peripherals&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	Sleek, elegant design&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Huge virtual workspace, very small footprint.&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Narrow Bezel design to minimize visual impact of using dual displays&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Unique hinge design for effortless adjustment&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Support for VESA mounting solutions (Apple Cinema Display VESA Mount Adapter sold separately)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;h3&gt;\r\n	Technical specifications&lt;/h3&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen size (diagonal viewable image size)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Apple Cinema HD Display: 30 inches (29.7-inch viewable)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen type&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Thin film transistor (TFT) active-matrix liquid crystal display (AMLCD)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Resolutions&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		2560 x 1600 pixels (optimum resolution)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		2048 x 1280&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		1920 x 1200&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		1280 x 800&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		1024 x 640&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Display colors (maximum)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		16.7 million&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Viewing angle (typical)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		170° horizontal; 170° vertical&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Brightness (typical)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 400 cd/m2&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Contrast ratio (typical)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		700:1&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Response time (typical)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		16 ms&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Pixel pitch&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		30-inch Cinema HD Display: 0.250 mm&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Screen treatment&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Antiglare hardcoat&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;User controls (hardware and software)&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Display Power,&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		System sleep, wake&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Brightness&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Monitor tilt&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Connectors and cables&lt;/b&gt;&lt;br&gt;\r\n	Cable&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		DVI (Digital Visual Interface)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		FireWire 400&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		USB 2.0&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		DC power (24 V)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	Connectors&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Two-port, self-powered USB 2.0 hub&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Two FireWire 400 ports&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Kensington security port&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;VESA mount adapter&lt;/b&gt;&lt;br&gt;\r\n	Requires optional Cinema Display VESA Mount Adapter (M9649G/A)&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Compatible with VESA FDMI (MIS-D, 100, C) compliant mounting solutions&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Electrical requirements&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Input voltage: 100-240 VAC 50-60Hz&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Maximum power when operating: 150W&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Energy saver mode: 3W or less&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Environmental requirements&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Operating temperature: 50° to 95° F (10° to 35° C)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Storage temperature: -40° to 116° F (-40° to 47° C)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Operating humidity: 20% to 80% noncondensing&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Maximum operating altitude: 10,000 feet&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Agency approvals&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		FCC Part 15 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		EN55022 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		EN55024&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		VCCI Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		AS/NZS 3548 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		CNS 13438 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		ICES-003 Class B&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		ISO 13406 part 2&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		MPR II&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		IEC 60950&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		UL 60950&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		CSA 60950&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		EN60950&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		ENERGY STAR&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		TCO \'03&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;Size and weight&lt;/b&gt;&lt;br&gt;\r\n	30-inch Apple Cinema HD Display&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Height: 21.3 inches (54.3 cm)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Width: 27.2 inches (68.8 cm)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Depth: 8.46 inches (21.5 cm)&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Weight: 27.5 pounds (12.5 kg)&lt;/li&gt;\r\n\r\n&lt;/ul&gt;\r\n\r\n&lt;p&gt;\r\n	&lt;b&gt;System Requirements&lt;/b&gt;&lt;/p&gt;\r\n\r\n&lt;ul&gt;\r\n\r\n	&lt;li&gt;\r\n		Mac Pro, all graphic options&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		MacBook Pro&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI-X) with ATI Radeon 9650 or better or NVIDIA GeForce 6800 GT DDL or better&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Power Mac G5 (PCI Express), all graphics options&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		PowerBook G4 with dual-link DVI support&lt;/li&gt;\r\n\r\n	&lt;li&gt;\r\n		Windows PC and graphics card that supports DVI ports with dual-link digital bandwidth and VESA DDC standard for plug-and-play setup&lt;/li&gt;\r\n\r\n&lt;/ul&gt;', '', '', '', ''),
@@ -3256,7 +3208,7 @@ CREATE TABLE `oc_product_image` (
 --
 
 INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort_order`) VALUES
-(2551, 30, 'catalog/demo/product/product1.jpg', 0),
+(2701, 30, 'catalog/demo/product/product6.jpg', 0),
 (2679, 28, 'catalog/demo/product/product6.jpg', 0),
 (2681, 41, 'catalog/demo/product/product12.jpg', 0),
 (2659, 36, 'catalog/demo/product/product10.jpg', 0),
@@ -3266,19 +3218,19 @@ INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort
 (2651, 32, 'catalog/demo/product/product11.jpg', 0),
 (2650, 32, 'catalog/demo/product/product16.jpg', 0),
 (2649, 32, 'catalog/demo/product/product14.jpg', 0),
-(2693, 44, 'catalog/demo/product/product15.jpg', 0),
-(2692, 44, 'catalog/demo/product/product16.jpg', 0),
+(2704, 44, 'catalog/demo/product/product13.jpg', 0),
+(2703, 44, 'catalog/demo/product/product16.jpg', 0),
 (2634, 45, 'catalog/demo/product/product14.jpg', 0),
 (2663, 31, 'catalog/demo/product/product3.jpg', 0),
 (2662, 31, 'catalog/demo/product/product4.jpg', 0),
-(2695, 29, 'catalog/demo/product/product3.jpg', 0),
+(2699, 29, 'catalog/demo/product/product3.jpg', 0),
 (2638, 46, 'catalog/demo/product/product18.jpg', 0),
 (2637, 46, 'catalog/demo/product/product17.jpg', 0),
 (2612, 48, 'catalog/demo/product/product17.jpg', 0),
 (2611, 48, 'catalog/demo/product/product16.jpg', 0),
 (2685, 40, 'catalog/demo/product/product8.jpg', 0),
 (2684, 40, 'catalog/demo/product/product7.jpg', 0),
-(2550, 30, 'catalog/demo/product/product6.jpg', 0),
+(2700, 30, 'catalog/demo/product/product1.jpg', 0),
 (2678, 28, 'catalog/demo/product/product5.jpg', 0),
 (2680, 41, 'catalog/demo/product/product10.jpg', 0),
 (2683, 40, 'catalog/demo/product/product9.jpg', 0),
@@ -3291,11 +3243,11 @@ INSERT INTO `oc_product_image` (`product_image_id`, `product_id`, `image`, `sort
 (2648, 32, 'catalog/demo/product/product15.jpg', 0),
 (2647, 32, 'catalog/demo/product/product13.jpg', 0),
 (2646, 32, 'catalog/demo/product/product12.jpg', 0),
-(2691, 44, 'catalog/demo/product/product13.jpg', 0),
+(2702, 44, 'catalog/demo/product/product15.jpg', 0),
 (2633, 45, 'catalog/demo/product/product16.jpg', 0),
 (2661, 31, 'catalog/demo/product/product1.jpg', 0),
 (2660, 31, 'catalog/demo/product/product2.jpg', 0),
-(2694, 29, 'catalog/demo/product/product1.jpg', 0),
+(2698, 29, 'catalog/demo/product/product1.jpg', 0),
 (2636, 46, 'catalog/demo/product/product15.jpg', 0),
 (2635, 46, 'catalog/demo/product/product14.jpg', 0),
 (2618, 49, 'catalog/demo/product/product19.jpg', 0),
@@ -3376,16 +3328,16 @@ INSERT INTO `oc_product_option_value` (`product_option_value_id`, `product_optio
 (6, 218, 42, 1, 31, 146, 1, '20.0000', '+', 2, '-', '20.00000000', '+'),
 (11, 223, 42, 2, 45, 3998, 1, '40.0000', '+', 0, '+', '40.00000000', '+'),
 (9, 223, 42, 2, 24, 194, 1, '20.0000', '+', 0, '+', '20.00000000', '+'),
-(12, 224, 35, 11, 46, 0, 1, '5.0000', '+', 0, '+', '0.00000000', '+'),
+(13, 224, 35, 11, 47, 10, 1, '10.0000', '+', 0, '+', '0.00000000', '+'),
 (14, 224, 35, 11, 48, 15, 1, '15.0000', '+', 0, '+', '0.00000000', '+'),
-(15, 226, 30, 5, 39, 2, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
 (16, 226, 30, 5, 40, 5, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
+(15, 226, 30, 5, 39, 2, 1, '0.0000', '+', 0, '+', '0.00000000', '+'),
 (10, 223, 42, 2, 44, 2696, 1, '30.0000', '+', 0, '+', '30.00000000', '+'),
 (8, 223, 42, 2, 23, 48, 1, '10.0000', '+', 0, '+', '10.00000000', '+'),
 (2, 217, 42, 5, 42, 200, 1, '2.0000', '+', 0, '+', '2.00000000', '+'),
 (1, 217, 42, 5, 41, 100, 0, '1.0000', '+', 0, '+', '1.00000000', '+'),
 (3, 217, 42, 5, 40, 300, 0, '3.0000', '+', 0, '+', '3.00000000', '+'),
-(13, 224, 35, 11, 47, 10, 1, '10.0000', '+', 0, '+', '0.00000000', '+'),
+(12, 224, 35, 11, 46, 0, 1, '5.0000', '+', 0, '+', '0.00000000', '+'),
 (4, 217, 42, 5, 39, 92, 1, '4.0000', '+', 0, '+', '4.00000000', '+'),
 (7, 218, 42, 1, 43, 300, 1, '30.0000', '+', 3, '+', '30.00000000', '+');
 
@@ -3450,8 +3402,8 @@ INSERT INTO `oc_product_reward` (`product_reward_id`, `product_id`, `customer_gr
 (602, 47, 1, 300),
 (605, 28, 1, 400),
 (599, 43, 1, 600),
-(587, 30, 1, 200),
-(607, 44, 1, 700),
+(608, 30, 1, 200),
+(609, 44, 1, 700),
 (601, 45, 1, 800),
 (597, 49, 1, 1000);
 
@@ -3480,7 +3432,7 @@ INSERT INTO `oc_product_special` (`product_special_id`, `product_id`, `customer_
 (483, 40, 1, 1, '30.0000', '2014-12-25', '2020-11-10'),
 (476, 50, 1, 1, '30.0000', '2014-12-25', '2020-11-10'),
 (482, 41, 1, 0, '20.0000', '2010-02-02', '2019-11-20'),
-(484, 29, 1, 0, '20.0000', '2009-05-04', '2019-11-28');
+(486, 29, 1, 0, '20.0000', '2009-05-04', '2019-11-28');
 
 -- --------------------------------------------------------
 
@@ -3499,13 +3451,16 @@ CREATE TABLE `oc_product_to_category` (
 
 INSERT INTO `oc_product_to_category` (`product_id`, `category_id`) VALUES
 (28, 33),
-(30, 33),
+(29, 75),
+(30, 75),
 (31, 33),
+(35, 77),
 (36, 33),
 (40, 33),
 (41, 33),
 (42, 33),
 (43, 33),
+(44, 78),
 (47, 33);
 
 -- --------------------------------------------------------
@@ -3831,128 +3786,128 @@ INSERT INTO `oc_setting` (`setting_id`, `store_id`, `code`, `key`, `value`, `ser
 (103, 0, 'free_checkout', 'free_checkout_status', '1', 0),
 (104, 0, 'free_checkout', 'free_checkout_order_status_id', '1', 0),
 (7243, 0, 'pavdeals', 'pavdeals_config', 'a:12:{s:15:"order_status_id";s:1:"5";s:12:"saleoff_icon";s:74:"http://localhost/opencart/pav_extroic/image/cache/data/saleoff-150x150.png";s:10:"today_deal";s:2:"10";s:8:"time_end";s:0:"";s:16:"enable_available";s:1:"1";s:11:"enable_pass";s:1:"1";s:10:"icon_width";s:3:"180";s:11:"icon_height";s:3:"180";s:5:"limit";s:2:"10";s:4:"cols";s:1:"4";s:5:"width";s:3:"500";s:6:"height";s:3:"500";}', 1),
-(7240, 0, 'pavblog', 'pavblog', 'a:42:{s:14:"general_lwidth";s:3:"900";s:15:"general_lheight";s:3:"400";s:14:"general_swidth";s:3:"900";s:15:"general_sheight";s:3:"400";s:14:"general_xwidth";s:2:"80";s:15:"general_xheight";s:2:"80";s:14:"rss_limit_item";s:2:"12";s:26:"keyword_listing_blogs_page";s:5:"blogs";s:16:"children_columns";s:1:"3";s:14:"general_cwidth";s:3:"900";s:15:"general_cheight";s:3:"400";s:22:"cat_limit_leading_blog";s:1:"1";s:24:"cat_limit_secondary_blog";s:1:"5";s:22:"cat_leading_image_type";s:1:"l";s:24:"cat_secondary_image_type";s:1:"l";s:24:"cat_columns_leading_blog";s:1:"1";s:27:"cat_columns_secondary_blogs";s:1:"1";s:14:"cat_show_title";s:1:"1";s:20:"cat_show_description";s:1:"1";s:17:"cat_show_readmore";s:1:"1";s:14:"cat_show_image";s:1:"1";s:15:"cat_show_author";s:1:"1";s:17:"cat_show_category";s:1:"1";s:16:"cat_show_created";s:1:"1";s:13:"cat_show_hits";s:1:"1";s:24:"cat_show_comment_counter";s:1:"1";s:15:"blog_image_type";s:1:"l";s:15:"blog_show_title";s:1:"1";s:15:"blog_show_image";s:1:"1";s:16:"blog_show_author";s:1:"1";s:18:"blog_show_category";s:1:"1";s:17:"blog_show_created";s:1:"1";s:25:"blog_show_comment_counter";s:1:"1";s:14:"blog_show_hits";s:1:"1";s:22:"blog_show_comment_form";s:1:"1";s:14:"comment_engine";s:5:"local";s:14:"diquis_account";s:10:"pavothemes";s:14:"facebook_appid";s:12:"100858303516";s:13:"comment_limit";s:2:"10";s:14:"facebook_width";s:3:"600";s:20:"auto_publish_comment";s:1:"0";s:16:"enable_recaptcha";s:1:"1";}', 1),
+(7984, 0, 'pavblog', 'pavblog', 'a:42:{s:14:"general_lwidth";s:3:"900";s:15:"general_lheight";s:3:"400";s:14:"general_swidth";s:3:"900";s:15:"general_sheight";s:3:"400";s:14:"general_xwidth";s:2:"80";s:15:"general_xheight";s:2:"80";s:14:"rss_limit_item";s:2:"12";s:26:"keyword_listing_blogs_page";s:5:"blogs";s:16:"children_columns";s:1:"3";s:14:"general_cwidth";s:3:"900";s:15:"general_cheight";s:3:"400";s:22:"cat_limit_leading_blog";s:1:"1";s:24:"cat_limit_secondary_blog";s:1:"5";s:22:"cat_leading_image_type";s:1:"l";s:24:"cat_secondary_image_type";s:1:"l";s:24:"cat_columns_leading_blog";s:1:"1";s:27:"cat_columns_secondary_blogs";s:1:"1";s:14:"cat_show_title";s:1:"1";s:20:"cat_show_description";s:1:"1";s:17:"cat_show_readmore";s:1:"1";s:14:"cat_show_image";s:1:"1";s:15:"cat_show_author";s:1:"1";s:17:"cat_show_category";s:1:"1";s:16:"cat_show_created";s:1:"1";s:13:"cat_show_hits";s:1:"1";s:24:"cat_show_comment_counter";s:1:"1";s:15:"blog_image_type";s:1:"l";s:15:"blog_show_title";s:1:"1";s:15:"blog_show_image";s:1:"1";s:16:"blog_show_author";s:1:"1";s:18:"blog_show_category";s:1:"1";s:17:"blog_show_created";s:1:"1";s:25:"blog_show_comment_counter";s:1:"1";s:14:"blog_show_hits";s:1:"1";s:22:"blog_show_comment_form";s:1:"1";s:14:"comment_engine";s:5:"local";s:14:"diquis_account";s:10:"pavothemes";s:14:"facebook_appid";s:12:"100858303516";s:13:"comment_limit";s:2:"10";s:14:"facebook_width";s:3:"600";s:20:"auto_publish_comment";s:1:"0";s:16:"enable_recaptcha";s:1:"1";}', 1),
 (854, 0, 'filter', 'filter_status', '1', 0),
 (7256, 0, 'pavverticalmenu_params', 'params', '[{"id":2,"group":0,"cols":3,"subwidth":600,"submenu":1,"rows":[{"cols":[{"widgets":"wid-60","colwidth":12}]}]},{"submenu":1,"subwidth":700,"id":5,"group":0,"cols":1,"rows":[{"cols":[{"widgets":"wid-20|wid-22|wid-58","colwidth":3},{"widgets":"wid-21","colwidth":9,"colclass":""}]}]},{"id":7,"group":0,"cols":1,"subwidth":700,"submenu":1,"rows":[{"cols":[{"widgets":"wid-55","colwidth":4},{"widgets":"wid-56","colwidth":4},{"widgets":"wid-63","colwidth":4}]},{"cols":[{"widgets":"wid-61","colwidth":12}]}]}]', 0),
-(7864, 0, 'themecontrol', 'themecontrol', 'a:67:{s:9:"layout_id";s:1:"1";s:8:"position";s:1:"1";s:21:"cateogry_display_mode";s:4:"grid";s:24:"listing_products_columns";s:1:"0";s:30:"listing_products_columns_small";s:1:"0";s:34:"listing_products_columns_minismall";s:1:"0";s:14:"category_pzoom";s:1:"1";s:18:"product_enablezoom";s:1:"1";s:19:"product_zoomgallery";s:6:"slider";s:16:"product_zoommode";s:5:"basic";s:20:"product_zoomlenssize";s:3:"150";s:18:"product_zoomeasing";s:1:"1";s:21:"product_zoomlensshape";s:5:"basic";s:22:"product_related_column";s:1:"0";s:24:"enable_product_customtab";s:1:"0";s:22:"product_customtab_name";a:2:{i:1;s:0:"";i:3;s:0:"";}s:25:"product_customtab_content";a:2:{i:1;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:17:"location_latitude";s:9:"10.923197";s:18:"location_longitude";s:10:"108.102943";s:18:"contact_customhtml";a:2:{i:1;s:60:"&lt;p&gt;11 Ngư Ông, Phan Thiết, Bình Thuận&lt;/p&gt;";i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:4:"skin";s:0:"";s:11:"theme_width";s:4:"auto";s:23:"enable_custom_copyright";s:1:"1";s:9:"copyright";s:156:"Copyright @2016 -  &lt;a href=&quot;#&quot;&gt;Newshopping&lt;/a&gt; - All rights reserved&lt;br&gt; Power by &lt;a href=&quot;#&quot;&gt;Opencart&lt;/a&gt;";s:18:"enable_offsidebars";s:1:"1";s:16:"enable_paneltool";s:1:"1";s:15:"template_layout";s:9:"fullwidth";s:6:"header";s:9:"version-1";s:9:"logo_type";s:13:"logo-opencart";s:9:"offcanvas";s:8:"megamenu";s:19:"home_container_full";s:1:"1";s:9:"quickview";s:1:"1";s:14:"widget_support";a:2:{i:1;s:329:"&lt;div class=&quot;media&quot;&gt;						&lt;div class=&quot;pull-left&quot;&gt;							&lt;i class=&quot;fa fa-mobile&quot;&gt;&lt;/i&gt;						&lt;/div&gt;						&lt;div class=&quot;media-body&quot;&gt;							&lt;span&gt;+84-909-5000-11&lt;/span&gt;&lt;h5&gt;Support 24/7. Toll Free&lt;/h5&gt;  						&lt;/div&gt;					&lt;/div&gt;";i:3;s:410:"&lt;div class=&quot;media&quot;&gt;\r\n						&lt;div class=&quot;pull-left&quot;&gt;\r\n							&lt;i class=&quot;fa fa-mobile&quot;&gt;&lt;/i&gt;\r\n						&lt;/div&gt;\r\n						&lt;div class=&quot;media-body&quot;&gt;+84-909-5000-11&lt;h5 style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; color: rgb(102, 102, 102);&quot;&gt;Support 24/7. Toll Free&lt;/h5&gt;  \r\n						&lt;/div&gt;\r\n					&lt;/div&gt;";}s:11:"widget_logo";a:2:{i:1;s:1862:"&lt;div class=&quot;box-about bg-success&quot;&gt;          &lt;div class=&quot;text-center space-50&quot;&gt;  &lt;img class=&quot;img-responsive&quot; alt=&quot;logo&quot; src=&quot;image/catalog/logo-footer.png&quot;&gt; &lt;/div&gt;&lt;p class=&quot;space-top-10&quot;&gt;                      Aenean solliin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibhultate cursus a sit amet mauris.         &lt;/p&gt;&lt;p class=&quot;space-top-10&quot;&gt;123456 street name, newyork, USA&lt;br&gt;+844 123 456 / + 844 123 456&lt;br&gt;&lt;a href=&quot;maito:contact@company.com&quot;&gt; contact@company.com &lt;/a&gt;&lt;/p&gt;&lt;ul class=&quot;list-unstyled list-inline space-margin-tb-40 bo-social-icons&quot;&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;linkedin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-weibo&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;weibo&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;";i:3;s:1836:"&lt;div class=&quot;box-about bg-success&quot;&gt;\r\n	 	 			&lt;img alt=&quot;logo&quot; src=&quot;image/catalog/logo-footer.png&quot;&gt;	 	 			\r\n					&lt;p class=&quot;space-top-10&quot;&gt;	 	 				\r\n					Aenean solliin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibhultate cursus a sit amet mauris.\r\n					&lt;/p&gt;\r\n					&lt;p class=&quot;space-top-10&quot;&gt;123456 street name, newyork, USA&lt;br&gt;+844 123 456 / + 844 123 456&lt;br&gt;&lt;a href=&quot;maito:contact@company.com&quot;&gt; contact@company.com &lt;/a&gt;&lt;/p&gt;\r\n					&lt;ul class=&quot;list-unstyled list-inline space-margin-tb-40 bo-social-icons&quot;&gt;\r\n						&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-facebook&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;facebook&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;\r\n						&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;twitter&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;\r\n						&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-google-plus&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;google+&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;\r\n						&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;linkedin&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;\r\n						&lt;li&gt;&lt;a href=&quot;&quot;&gt;&lt;span class=&quot;bo-social-outline radius-x&quot;&gt;&lt;i class=&quot;fa fa-weibo&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;weibo&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;\r\n					&lt;/ul&gt;\r\n					&lt;/div&gt;";}s:12:"widget_papal";a:2:{i:1;s:396:"&lt;div class=&quot;panel pull-left&quot;&gt;			            &lt;div class=&quot;panel-heading&quot;&gt;&lt;h6 class=&quot;panel-title font-size-18&quot;&gt;Payment method&lt;/h6&gt;\r\n&lt;/div&gt;\r\n			            &lt;div class=&quot;panel-body&quot;&gt;				           &lt;img alt=&quot;papal&quot; src=&quot;image/catalog/payment.png&quot;&gt;			            &lt;/div&gt;\r\n		          	&lt;/div&gt;";i:3;s:436:"&lt;div class=&quot;panel pull-left&quot;&gt;                 \r\n					  &lt;div class=&quot;panel-heading&quot;&gt;\r\n					    &lt;h6 class=&quot;panel-title font-size-18&quot;&gt;Payment method&lt;/h6&gt;\r\n					  &lt;/div&gt;\r\n					  &lt;div class=&quot;panel-body&quot;&gt;                   \r\n					    &lt;img alt=&quot;papal&quot; src=&quot;image/catalog/payment.png&quot;&gt;                  \r\n					  &lt;/div&gt;\r\n					&lt;/div&gt;";}s:13:"widget_callus";a:2:{i:1;s:384:"&lt;div class=&quot;panel pull-right&quot;&gt;                    &lt;div class=&quot;panel-heading&quot;&gt;    &lt;h6 class=&quot;panel-title font-size-18&quot;&gt;Feel free to call us&lt;/h6&gt;&lt;/div&gt;&lt;div class=&quot;panel-body&quot;&gt;       &lt;span class=&quot;red font-size-30&quot;&gt;+844 123 456 78&lt;/span&gt;                             &lt;/div&gt;&lt;/div&gt;";i:3;s:439:"&lt;div class=&quot;panel pull-right&quot;&gt;                    \r\n						&lt;div class=&quot;panel-heading&quot;&gt;    \r\n						&lt;h6 class=&quot;panel-title font-size-18&quot;&gt;Feel free to call us&lt;/h6&gt;\r\n						&lt;/div&gt;\r\n						&lt;div class=&quot;panel-body&quot;&gt;       \r\n						&lt;span class=&quot;red font-size-30&quot;&gt;+844 123 456 78&lt;/span&gt;                             \r\n						&lt;/div&gt;\r\n					&lt;/div&gt;";}s:17:"enable_customfont";s:1:"0";s:11:"type_fonts1";s:8:"standard";s:13:"normal_fonts1";s:7:"inherit";s:11:"google_url1";s:0:"";s:14:"google_family1";s:0:"";s:9:"fontsize1";s:7:"inherit";s:11:"type_fonts2";s:8:"standard";s:13:"normal_fonts2";s:7:"inherit";s:11:"google_url2";s:0:"";s:14:"google_family2";s:0:"";s:9:"fontsize2";s:7:"inherit";s:11:"type_fonts3";s:8:"standard";s:13:"normal_fonts3";s:7:"inherit";s:11:"google_url3";s:0:"";s:14:"google_family3";s:0:"";s:9:"fontsize3";s:7:"inherit";s:11:"type_fonts4";s:8:"standard";s:13:"normal_fonts4";s:27:"Verdana, Geneva, sans-serif";s:11:"google_url4";s:0:"";s:14:"google_family4";s:0:"";s:14:"body_selector4";s:0:"";s:14:"block_showcase";s:0:"";s:15:"block_promotion";s:0:"";s:16:"block_footer_top";s:0:"";s:19:"block_footer_center";s:0:"";s:19:"block_footer_bottom";s:0:"";s:19:"enable_compress_css";s:0:"";s:17:"exclude_css_files";s:13:"bootstrap.css";s:15:"customize_theme";s:0:"";s:10:"custom_css";s:0:"";s:17:"custom_javascript";s:0:"";}', 1),
-(7979, 0, 'config', 'config_google_captcha_secret', '6LdMxwYTAAAAALRM6bHENCGIRO6thJRXNlYl0XAR', 0),
-(7980, 0, 'config', 'config_google_captcha_status', '1', 0),
-(7971, 0, 'config', 'config_encryption', 'b35f4c6f47e2f7c626ac40e22f955c37', 0),
-(7972, 0, 'config', 'config_compression', '0', 0),
-(7973, 0, 'config', 'config_error_display', '1', 0),
-(7974, 0, 'config', 'config_error_log', '1', 0),
-(7975, 0, 'config', 'config_error_filename', 'error.log', 0),
-(7976, 0, 'config', 'config_google_analytics', '', 0),
-(7977, 0, 'config', 'config_google_analytics_status', '0', 0),
-(7978, 0, 'config', 'config_google_captcha_public', '6LdMxwYTAAAAAPfQS6XqEkGGBsjGLe1HMpRlR2hn', 0),
-(7970, 0, 'config', 'config_password', '1', 0),
-(7969, 0, 'config', 'config_maintenance', '1', 0),
-(7968, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', 0),
-(7965, 0, 'config', 'config_seo_url', '1', 0),
-(7966, 0, 'config', 'config_file_max_size', '300000', 0),
-(7967, 0, 'config', 'config_file_ext_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', 0),
-(7964, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
-(7963, 0, 'config', 'config_shared', '0', 0),
-(7962, 0, 'config', 'config_secure', '0', 0),
-(7961, 0, 'config', 'config_mail_alert', '', 0),
-(7960, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
-(7959, 0, 'config', 'config_mail_smtp_port', '25', 0),
-(7958, 0, 'config', 'config_mail_smtp_password', '', 0),
-(7957, 0, 'config', 'config_mail_smtp_username', '', 0),
-(7956, 0, 'config', 'config_mail_smtp_hostname', '', 0),
-(7955, 0, 'config', 'config_mail_parameter', '', 0),
-(7954, 0, 'config', 'config_mail_protocol', 'mail', 0),
-(7953, 0, 'config', 'config_ftp_status', '0', 0),
-(7952, 0, 'config', 'config_ftp_root', '', 0),
-(7949, 0, 'config', 'config_ftp_port', '21', 0),
-(7950, 0, 'config', 'config_ftp_username', '', 0),
-(7951, 0, 'config', 'config_ftp_password', '', 0),
-(7948, 0, 'config', 'config_ftp_hostname', 'localhost', 0),
-(7947, 0, 'config', 'config_image_location_height', '89', 0),
-(7946, 0, 'config', 'config_image_location_width', '89', 0),
-(7945, 0, 'config', 'config_image_cart_height', '89', 0),
-(7944, 0, 'config', 'config_image_cart_width', '89', 0),
-(7941, 0, 'config', 'config_image_compare_height', '89', 0),
-(7942, 0, 'config', 'config_image_wishlist_width', '89', 0),
-(7943, 0, 'config', 'config_image_wishlist_height', '98', 0),
-(7940, 0, 'config', 'config_image_compare_width', '89', 0),
-(7939, 0, 'config', 'config_image_related_height', '500', 0),
-(7938, 0, 'config', 'config_image_related_width', '500', 0),
-(7937, 0, 'config', 'config_image_additional_height', '78', 0),
-(7936, 0, 'config', 'config_image_additional_width', '78', 0),
-(7935, 0, 'config', 'config_image_product_height', '500', 0),
-(7933, 0, 'config', 'config_image_popup_height', '500', 0),
-(7934, 0, 'config', 'config_image_product_width', '500', 0),
-(7932, 0, 'config', 'config_image_popup_width', '500', 0),
-(7931, 0, 'config', 'config_image_thumb_height', '500', 0),
-(7930, 0, 'config', 'config_image_thumb_width', '500', 0),
-(7929, 0, 'config', 'config_image_category_height', '270', 0),
-(7927, 0, 'config', 'config_icon', 'catalog/logo.gif', 0),
-(7928, 0, 'config', 'config_image_category_width', '873', 0),
-(7926, 0, 'config', 'config_logo', 'catalog/logo.gif', 0),
-(7925, 0, 'config', 'config_return_status_id', '2', 0),
-(7924, 0, 'config', 'config_return_id', '0', 0),
-(7923, 0, 'config', 'config_affiliate_mail', '0', 0),
-(7922, 0, 'config', 'config_affiliate_id', '4', 0),
-(7921, 0, 'config', 'config_affiliate_commission', '5', 0),
-(7920, 0, 'config', 'config_affiliate_auto', '0', 0),
-(7919, 0, 'config', 'config_affiliate_approval', '0', 0),
-(7918, 0, 'config', 'config_stock_checkout', '0', 0),
-(7917, 0, 'config', 'config_stock_warning', '1', 0),
-(7898, 0, 'config', 'config_tax_default', '', 0),
-(7899, 0, 'config', 'config_tax_customer', '', 0),
-(7900, 0, 'config', 'config_customer_online', '0', 0),
-(7901, 0, 'config', 'config_customer_group_id', '1', 0),
-(7902, 0, 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:"1";}', 1),
-(7903, 0, 'config', 'config_customer_price', '0', 0),
-(7904, 0, 'config', 'config_login_attempts', '5', 0),
-(7905, 0, 'config', 'config_account_id', '3', 0),
-(7906, 0, 'config', 'config_account_mail', '0', 0),
-(7907, 0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
-(7908, 0, 'config', 'config_api_id', '5', 0),
-(7909, 0, 'config', 'config_cart_weight', '1', 0),
-(7910, 0, 'config', 'config_checkout_guest', '1', 0),
-(7911, 0, 'config', 'config_checkout_id', '5', 0),
-(7912, 0, 'config', 'config_order_status_id', '1', 0),
-(7913, 0, 'config', 'config_processing_status', 'a:1:{i:0;s:1:"2";}', 1),
-(7914, 0, 'config', 'config_complete_status', 'a:1:{i:0;s:1:"5";}', 1),
-(7916, 0, 'config', 'config_stock_display', '1', 0),
+(8688, 0, 'themecontrol', 'themecontrol', 'a:67:{s:9:"layout_id";s:1:"1";s:8:"position";s:1:"1";s:21:"cateogry_display_mode";s:4:"grid";s:24:"listing_products_columns";s:1:"0";s:30:"listing_products_columns_small";s:1:"0";s:34:"listing_products_columns_minismall";s:1:"0";s:14:"category_pzoom";s:1:"1";s:18:"product_enablezoom";s:1:"1";s:19:"product_zoomgallery";s:6:"slider";s:16:"product_zoommode";s:5:"basic";s:20:"product_zoomlenssize";s:3:"150";s:18:"product_zoomeasing";s:1:"1";s:21:"product_zoomlensshape";s:5:"basic";s:22:"product_related_column";s:1:"0";s:24:"enable_product_customtab";s:1:"0";s:22:"product_customtab_name";a:2:{i:3;s:0:"";i:1;s:0:"";}s:25:"product_customtab_content";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:17:"location_latitude";s:9:"10.923197";s:18:"location_longitude";s:10:"108.102943";s:18:"contact_customhtml";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:60:"&lt;p&gt;11 Ngư Ông, Phan Thiết, Bình Thuận&lt;/p&gt;";}s:4:"skin";s:0:"";s:11:"theme_width";s:4:"auto";s:23:"enable_custom_copyright";s:1:"1";s:9:"copyright";s:156:"Copyright @2016 -  &lt;a href=&quot;#&quot;&gt;Newshopping&lt;/a&gt; - All rights reserved&lt;br&gt; Power by &lt;a href=&quot;#&quot;&gt;Opencart&lt;/a&gt;";s:18:"enable_offsidebars";s:1:"1";s:16:"enable_paneltool";s:1:"1";s:15:"template_layout";s:9:"fullwidth";s:6:"header";s:9:"version-1";s:9:"logo_type";s:13:"logo-opencart";s:9:"offcanvas";s:8:"category";s:19:"home_container_full";s:1:"1";s:9:"quickview";s:1:"1";s:14:"widget_support";a:2:{i:3;s:397:"&lt;div class=&quot;media&quot;&gt;\r\n						&lt;div class=&quot;pull-left&quot;&gt;\r\n							&lt;i class=&quot;fa fa-mobile&quot;&gt;&lt;/i&gt;\r\n						&lt;/div&gt;\r\n						&lt;div class=&quot;media-body&quot;&gt;+84-909-5000-11&lt;h5 style=&quot;font-family: &amp;quot;Open Sans&amp;quot;, sans-serif; color: rgb(102, 102, 102);&quot;&gt;&lt;br&gt;&lt;/h5&gt;  \r\n						&lt;/div&gt;\r\n					&lt;/div&gt;";i:1;s:329:"&lt;div class=&quot;media&quot;&gt;						&lt;div class=&quot;pull-left&quot;&gt;							&lt;i class=&quot;fa fa-mobile&quot;&gt;&lt;/i&gt;						&lt;/div&gt;						&lt;div class=&quot;media-body&quot;&gt;							&lt;span&gt;+84-909-5000-11&lt;/span&gt;&lt;h5&gt;Support 24/7. Toll Free&lt;/h5&gt;  						&lt;/div&gt;					&lt;/div&gt;";}s:11:"widget_logo";a:2:{i:3;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";i:1;s:29:"&lt;p&gt;&lt;br&gt;&lt;/p&gt;";}s:12:"widget_papal";a:2:{i:3;s:10:"&lt;br&gt;";i:1;s:10:"&lt;br&gt;";}s:13:"widget_callus";a:2:{i:3;s:10:"&lt;br&gt;";i:1;s:10:"&lt;br&gt;";}s:17:"enable_customfont";s:1:"0";s:11:"type_fonts1";s:8:"standard";s:13:"normal_fonts1";s:7:"inherit";s:11:"google_url1";s:0:"";s:14:"google_family1";s:0:"";s:9:"fontsize1";s:7:"inherit";s:11:"type_fonts2";s:8:"standard";s:13:"normal_fonts2";s:7:"inherit";s:11:"google_url2";s:0:"";s:14:"google_family2";s:0:"";s:9:"fontsize2";s:7:"inherit";s:11:"type_fonts3";s:8:"standard";s:13:"normal_fonts3";s:7:"inherit";s:11:"google_url3";s:0:"";s:14:"google_family3";s:0:"";s:9:"fontsize3";s:7:"inherit";s:11:"type_fonts4";s:8:"standard";s:13:"normal_fonts4";s:27:"Verdana, Geneva, sans-serif";s:11:"google_url4";s:0:"";s:14:"google_family4";s:0:"";s:14:"body_selector4";s:0:"";s:14:"block_showcase";s:0:"";s:15:"block_promotion";s:0:"";s:16:"block_footer_top";s:1:"3";s:19:"block_footer_center";s:0:"";s:19:"block_footer_bottom";s:1:"2";s:19:"enable_compress_css";s:0:"";s:17:"exclude_css_files";s:13:"bootstrap.css";s:15:"customize_theme";s:0:"";s:10:"custom_css";s:0:"";s:17:"custom_javascript";s:0:"";}', 1),
+(8682, 0, 'config', 'config_google_captcha_status', '1', 0),
+(8681, 0, 'config', 'config_google_captcha_secret', '6LdMxwYTAAAAALRM6bHENCGIRO6thJRXNlYl0XAR', 0),
+(8677, 0, 'config', 'config_error_filename', 'error.log', 0),
+(8678, 0, 'config', 'config_google_analytics', '', 0),
+(8679, 0, 'config', 'config_google_analytics_status', '0', 0),
+(8680, 0, 'config', 'config_google_captcha_public', '6LdMxwYTAAAAAPfQS6XqEkGGBsjGLe1HMpRlR2hn', 0),
+(8676, 0, 'config', 'config_error_log', '1', 0),
+(8675, 0, 'config', 'config_error_display', '0', 0),
+(8674, 0, 'config', 'config_compression', '0', 0),
+(8673, 0, 'config', 'config_encryption', 'b35f4c6f47e2f7c626ac40e22f955c37', 0),
+(8672, 0, 'config', 'config_password', '1', 0),
+(8671, 0, 'config', 'config_maintenance', '1', 0),
+(8650, 0, 'config', 'config_ftp_hostname', 'localhost', 0),
+(8651, 0, 'config', 'config_ftp_port', '21', 0),
+(8652, 0, 'config', 'config_ftp_username', '', 0),
+(8653, 0, 'config', 'config_ftp_password', '', 0),
+(8654, 0, 'config', 'config_ftp_root', '', 0),
+(8655, 0, 'config', 'config_ftp_status', '0', 0),
+(8656, 0, 'config', 'config_mail_protocol', 'mail', 0),
+(8657, 0, 'config', 'config_mail_parameter', '', 0),
+(8658, 0, 'config', 'config_mail_smtp_hostname', '', 0),
+(8659, 0, 'config', 'config_mail_smtp_username', '', 0),
+(8660, 0, 'config', 'config_mail_smtp_password', '', 0),
+(8661, 0, 'config', 'config_mail_smtp_port', '25', 0),
+(8662, 0, 'config', 'config_mail_smtp_timeout', '5', 0),
+(8663, 0, 'config', 'config_mail_alert', '', 0),
+(8664, 0, 'config', 'config_secure', '0', 0),
+(8665, 0, 'config', 'config_shared', '0', 0),
+(8666, 0, 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', 0),
+(8667, 0, 'config', 'config_seo_url', '1', 0),
+(8668, 0, 'config', 'config_file_max_size', '300000', 0),
+(8669, 0, 'config', 'config_file_ext_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', 0),
+(8670, 0, 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', 0),
+(8649, 0, 'config', 'config_image_location_height', '89', 0),
+(8648, 0, 'config', 'config_image_location_width', '89', 0),
+(8646, 0, 'config', 'config_image_cart_width', '89', 0),
+(8647, 0, 'config', 'config_image_cart_height', '89', 0),
+(8645, 0, 'config', 'config_image_wishlist_height', '98', 0),
+(8644, 0, 'config', 'config_image_wishlist_width', '89', 0),
+(8643, 0, 'config', 'config_image_compare_height', '89', 0),
+(8642, 0, 'config', 'config_image_compare_width', '89', 0),
+(8641, 0, 'config', 'config_image_related_height', '500', 0),
+(8640, 0, 'config', 'config_image_related_width', '500', 0),
+(8639, 0, 'config', 'config_image_additional_height', '78', 0),
+(8637, 0, 'config', 'config_image_product_height', '500', 0),
+(8638, 0, 'config', 'config_image_additional_width', '78', 0),
+(8636, 0, 'config', 'config_image_product_width', '500', 0),
+(8635, 0, 'config', 'config_image_popup_height', '500', 0),
+(8634, 0, 'config', 'config_image_popup_width', '500', 0),
+(8633, 0, 'config', 'config_image_thumb_height', '500', 0),
+(8632, 0, 'config', 'config_image_thumb_width', '500', 0),
+(8631, 0, 'config', 'config_image_category_height', '270', 0),
+(8627, 0, 'config', 'config_return_status_id', '2', 0),
+(8628, 0, 'config', 'config_logo', 'catalog/logo.gif', 0),
+(8629, 0, 'config', 'config_icon', 'catalog/logo.gif', 0),
+(8630, 0, 'config', 'config_image_category_width', '873', 0),
 (7508, 0, 'pavmegamenu_params', 'pavmegamenu_params', '[{"id":43,"align":"aligned-left","group":0,"cols":1,"submenu":1,"rows":[{"cols":[{"type":"menu","colwidth":12}]}]},{"submenu":1,"subwidth":600,"id":2,"align":"aligned-left","group":0,"cols":3,"rows":[{"cols":[{"widgets":"wid-55","colwidth":6},{"widgets":"wid-57","colwidth":6}]}]},{"submenu":1,"id":19,"align":"aligned-left","group":0,"cols":1,"rows":[{"cols":[{"type":"menu","colwidth":12}]}]},{"id":23,"group":0,"cols":1,"submenu":1,"align":"aligned-left","rows":[{"cols":[{"type":"menu","colwidth":12}]}]},{"id":29,"group":0,"cols":1,"submenu":1,"align":"aligned-left","rows":[{"cols":[{"type":"menu","colwidth":12}]}]}]', 0),
 (7509, 0, 'pavautosearch', 'pavautosearch_status', '1', 0),
-(7915, 0, 'config', 'config_order_mail', '0', 0),
-(7897, 0, 'config', 'config_tax', '0', 0),
-(7896, 0, 'config', 'config_voucher_max', '1000', 0),
-(7895, 0, 'config', 'config_voucher_min', '1', 0),
-(7894, 0, 'config', 'config_review_mail', '0', 0),
-(7893, 0, 'config', 'config_review_guest', '1', 0),
-(7892, 0, 'config', 'config_review_status', '1', 0),
-(7891, 0, 'config', 'config_limit_admin', '20', 0),
-(7890, 0, 'config', 'config_product_description_length', '100', 0),
-(7889, 0, 'config', 'config_product_limit', '12', 0),
-(7888, 0, 'config', 'config_product_count', '1', 0),
-(7887, 0, 'config', 'config_weight_class_id', '1', 0),
-(7886, 0, 'config', 'config_length_class_id', '1', 0),
-(7883, 0, 'config', 'config_admin_language', 'en', 0),
-(7884, 0, 'config', 'config_currency', 'USD', 0),
-(7885, 0, 'config', 'config_currency_auto', '1', 0),
-(7880, 0, 'config', 'config_country_id', '230', 0),
-(7882, 0, 'config', 'config_language', 'vi', 0),
-(7881, 0, 'config', 'config_zone_id', '3761', 0),
-(7879, 0, 'config', 'config_layout_id', '4', 0),
-(7878, 0, 'config', 'config_template', 'lexus_shopping_new', 0),
-(7876, 0, 'config', 'config_meta_description', 'Chuyên cung cấp dụng cụ câu, đánh bắt hải sản', 0),
-(7877, 0, 'config', 'config_meta_keyword', 'Ngư nghiệp, ngư luới cụ, đồ câu', 0),
-(7875, 0, 'config', 'config_meta_title', 'Ngư Lưới Cụ', 0),
-(7874, 0, 'config', 'config_comment', '', 0),
-(7873, 0, 'config', 'config_open', '', 0),
-(7871, 0, 'config', 'config_fax', '', 0),
-(7872, 0, 'config', 'config_image', '', 0),
-(7870, 0, 'config', 'config_telephone', '+84-909500011', 0),
-(7869, 0, 'config', 'config_email', 'tuthuan.huynh@gmail.com', 0),
-(7868, 0, 'config', 'config_geocode', '10.923272, 108.103208', 0),
-(7867, 0, 'config', 'config_address', '11 Ngư Ông, Phan Thiết', 0),
-(7866, 0, 'config', 'config_owner', 'Lâm Hiệp Hoà', 0),
-(7865, 0, 'config', 'config_name', 'Đồ Câu Nhật', 0);
+(8626, 0, 'config', 'config_return_id', '0', 0),
+(8625, 0, 'config', 'config_affiliate_mail', '0', 0),
+(8624, 0, 'config', 'config_affiliate_id', '4', 0),
+(8623, 0, 'config', 'config_affiliate_commission', '5', 0),
+(8622, 0, 'config', 'config_affiliate_auto', '0', 0),
+(8621, 0, 'config', 'config_affiliate_approval', '0', 0),
+(8620, 0, 'config', 'config_stock_checkout', '0', 0),
+(8619, 0, 'config', 'config_stock_warning', '1', 0),
+(8618, 0, 'config', 'config_stock_display', '1', 0),
+(8617, 0, 'config', 'config_order_mail', '0', 0),
+(8616, 0, 'config', 'config_complete_status', 'a:1:{i:0;s:1:"5";}', 1),
+(8615, 0, 'config', 'config_processing_status', 'a:1:{i:0;s:1:"2";}', 1),
+(8614, 0, 'config', 'config_order_status_id', '1', 0),
+(8613, 0, 'config', 'config_checkout_id', '5', 0),
+(8612, 0, 'config', 'config_checkout_guest', '1', 0),
+(8611, 0, 'config', 'config_cart_weight', '1', 0),
+(8610, 0, 'config', 'config_api_id', '5', 0),
+(8608, 0, 'config', 'config_account_mail', '0', 0),
+(8609, 0, 'config', 'config_invoice_prefix', 'INV-2013-00', 0),
+(8607, 0, 'config', 'config_account_id', '3', 0),
+(8606, 0, 'config', 'config_login_attempts', '5', 0),
+(8605, 0, 'config', 'config_customer_price', '0', 0),
+(8603, 0, 'config', 'config_customer_group_id', '1', 0),
+(8604, 0, 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:"1";}', 1),
+(8602, 0, 'config', 'config_customer_online', '0', 0),
+(8601, 0, 'config', 'config_tax_customer', '', 0),
+(8600, 0, 'config', 'config_tax_default', '', 0),
+(8599, 0, 'config', 'config_tax', '0', 0),
+(8598, 0, 'config', 'config_voucher_max', '1000', 0),
+(8597, 0, 'config', 'config_voucher_min', '1', 0),
+(8596, 0, 'config', 'config_review_mail', '0', 0),
+(8595, 0, 'config', 'config_review_guest', '1', 0),
+(8594, 0, 'config', 'config_review_status', '1', 0),
+(8593, 0, 'config', 'config_limit_admin', '20', 0),
+(8591, 0, 'config', 'config_product_limit', '12', 0),
+(8592, 0, 'config', 'config_product_description_length', '100', 0),
+(8590, 0, 'config', 'config_product_count', '1', 0),
+(8589, 0, 'config', 'config_weight_class_id', '1', 0),
+(8588, 0, 'config', 'config_length_class_id', '1', 0),
+(8587, 0, 'config', 'config_currency_auto', '1', 0),
+(8586, 0, 'config', 'config_currency', 'USD', 0),
+(8585, 0, 'config', 'config_admin_language', 'en', 0),
+(8584, 0, 'config', 'config_language', 'en', 0),
+(8583, 0, 'config', 'config_zone_id', '3761', 0),
+(8582, 0, 'config', 'config_country_id', '230', 0),
+(8581, 0, 'config', 'config_layout_id', '4', 0),
+(8580, 0, 'config', 'config_template', 'lexus_shopping_new', 0),
+(8579, 0, 'config', 'config_meta_keyword', 'Ngư nghiệp, ngư luới cụ, đồ câu', 0),
+(8578, 0, 'config', 'config_meta_description', 'Chuyên cung cấp dụng cụ câu, đánh bắt hải sản', 0),
+(8577, 0, 'config', 'config_meta_title', 'Ngư Lưới Cụ', 0),
+(8576, 0, 'config', 'config_comment', '', 0),
+(8575, 0, 'config', 'config_open', '', 0),
+(8574, 0, 'config', 'config_image', '', 0),
+(8573, 0, 'config', 'config_fax', '', 0),
+(8572, 0, 'config', 'config_telephone', '+84-909500011', 0),
+(8571, 0, 'config', 'config_email', 'tuthuan.huynh@gmail.com', 0),
+(8570, 0, 'config', 'config_geocode', '10.923272, 108.103208', 0),
+(8569, 0, 'config', 'config_address', '11 Ngư Ông, Phan Thiết', 0),
+(8568, 0, 'config', 'config_owner', 'Lâm Hiệp Hoà', 0),
+(8567, 0, 'config', 'config_name', 'Đồ Câu Nhật', 0);
 
 -- --------------------------------------------------------
 
@@ -4096,13 +4051,6 @@ CREATE TABLE `oc_upload` (
   `date_added` datetime NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
---
--- Dumping data for table `oc_upload`
---
-
-INSERT INTO `oc_upload` (`upload_id`, `name`, `filename`, `code`, `date_added`) VALUES
-(1, 'image.jpg', 'image.jpg.1cf9b971e97c934e425cbd14bb123eb3', '7c4c3bec27d670eb81cf521b97124202797980e1', '2015-01-12 14:27:48');
-
 -- --------------------------------------------------------
 
 --
@@ -4124,17 +4072,15 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (1019, 'manufacturer_id=8', 'Shimano'),
 (772, 'information_id=4', 'about_us'),
 (1015, 'product_id=42', 'test'),
-(1023, 'category_id=77', ''),
 (1020, 'category_id=33', 'camera'),
-(952, 'product_id=30', 'canon-eos-5d'),
+(1027, 'product_id=30', 'canon-eos-5d'),
 (990, 'product_id=47', 'hp-lp3065'),
 (1012, 'product_id=28', 'htc-touch-hd'),
 (978, 'product_id=43', 'macbook'),
-(1016, 'product_id=44', 'macbook-air'),
+(1028, 'product_id=44', 'macbook-air'),
 (980, 'product_id=45', 'macbook-pro'),
 (989, 'product_id=31', 'nikon-d300'),
-(1017, 'product_id=29', 'palm-treo-pro'),
-(987, 'product_id=35', 'product-8'),
+(1029, 'product_id=35', 'product-8'),
 (974, 'product_id=49', 'samsung-galaxy-tab-10-1'),
 (985, 'product_id=33', 'samsung-syncmaster-941bw'),
 (981, 'product_id=46', 'sony-vaio'),
@@ -4143,10 +4089,10 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (988, 'product_id=36', 'ipod-nano'),
 (986, 'product_id=34', 'ipod-shuffle'),
 (984, 'product_id=32', 'ipod-touch'),
-(828, 'manufacturer_id=9', 'canon'),
+(1024, 'manufacturer_id=9', 'canon'),
 (829, 'manufacturer_id=5', 'htc'),
 (830, 'manufacturer_id=7', 'hewlett-packard'),
-(831, 'manufacturer_id=6', 'palm'),
+(1025, 'manufacturer_id=6', 'Daiwa'),
 (832, 'manufacturer_id=10', 'sony'),
 (841, 'information_id=6', 'delivery'),
 (842, 'information_id=3', 'privacy'),
@@ -4160,11 +4106,7 @@ INSERT INTO `oc_url_alias` (`url_alias_id`, `query`, `keyword`) VALUES
 (893, 'pavblog/blog=10', ''),
 (876, 'pavblog/category=20', ''),
 (877, 'pavblog/category=24', ''),
-(878, 'pavblog/category=23', ''),
-(995, 'category_id=64', ''),
-(998, 'category_id=67', ''),
-(1021, 'category_id=75', ''),
-(1022, 'category_id=76', '');
+(878, 'pavblog/category=23', '');
 
 -- --------------------------------------------------------
 
@@ -4262,18 +4204,13 @@ CREATE TABLE `oc_verticalmenu` (
 --
 
 INSERT INTO `oc_verticalmenu` (`verticalmenu_id`, `image`, `parent_id`, `is_group`, `width`, `submenu_width`, `colum_width`, `submenu_colum_width`, `item`, `colums`, `type`, `is_content`, `show_title`, `type_submenu`, `level_depth`, `published`, `store_id`, `position`, `show_sub`, `url`, `target`, `privacy`, `position_type`, `menu_class`, `description`, `content_text`, `submenu_content`, `level`, `left`, `right`, `widget_id`, `icon`) VALUES
-(1, '', 0, 2, '', '', '', '', '', '1', '', 2, 1, '1', 0, 1, 0, 0, 0, '', '', 0, 'top', '', '', '', '', -5, 34, 47, 0, NULL),
-(2, 'catalog/demo/icon/icon-1.png', 1, 0, '', '', '', 'col1=3, col2=3, col3=6', '24', '3', 'category', 0, 1, 'menu', 0, 1, 0, 1, 0, '', '', 0, 'top', 'topdropdow', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(5, 'catalog/demo/icon/icon-2.png', 1, 0, '', '', '', '', '46', '1', 'category', 0, 1, 'menu', 0, 1, 0, 2, 0, '', '', 0, 'top', 'topdropdow', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(7, 'catalog/demo/icon/icon-3.png', 1, 0, '', '', '', '', '45', '1', 'category', 0, 1, 'menu', 0, 1, 0, 3, 0, '', '', 0, 'top', 'bg1 topdropdow', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(35, 'catalog/demo/icon/icon-8.png', 1, 0, '', '', '', '', '45', '1', 'category', 0, 1, 'menu', 0, 1, 0, 8, 0, '', '', 0, 'top', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(36, 'catalog/demo/icon/icon-7.png', 1, 0, '', '', '', '', '33', '1', 'category', 0, 1, 'menu', 0, 1, 0, 7, 0, '', '', 0, 'top', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(37, 'catalog/demo/icon/icon-4.png', 1, 0, '', '', '', '', '57', '1', 'category', 0, 1, 'menu', 0, 1, 0, 4, 0, '', '', 0, 'top', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(38, 'catalog/demo/icon/icon-5.png', 1, 0, '', '', '', '', '20', '1', 'category', 0, 1, 'menu', 0, 1, 0, 5, 0, '', '', 0, 'top', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(41, 'catalog/demo/icon/icon-6.png', 1, 0, '', '', '', '', '17', '1', 'category', 0, 1, 'menu', 0, 1, 0, 6, 0, '', '', 0, 'top', '', '', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(43, 'catalog/demo/icon/icon-9.png', 1, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 9, 0, '#', NULL, 0, 'top', '', NULL, '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(44, 'catalog/demo/icon/icon-10.png', 1, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 10, 0, 'index.php?route=product/category&amp;path=33', NULL, 0, 'top', '', NULL, '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', '&lt;p&gt;&lt;br&gt;&lt;/p&gt;', 0, 0, 0, 2, ''),
-(45, '', 0, 2, NULL, NULL, NULL, NULL, NULL, '1', '', 2, 1, '1', 0, 1, 0, 0, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 0, NULL);
+(55, '', 1, 0, NULL, NULL, NULL, NULL, '77', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(56, '', 1, 0, NULL, NULL, NULL, NULL, '33', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(57, '', 1, 0, NULL, NULL, NULL, NULL, '75', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(58, '', 1, 0, NULL, NULL, NULL, NULL, '76', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(59, '', 56, 0, NULL, NULL, NULL, NULL, '66', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(60, '', 56, 0, NULL, NULL, NULL, NULL, '68', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL),
+(61, '', 56, 0, NULL, NULL, NULL, NULL, '78', '1', 'category', 2, 1, 'menu', 0, 1, 0, 99, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, 0, 0, 0, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -4293,26 +4230,20 @@ CREATE TABLE `oc_verticalmenu_description` (
 --
 
 INSERT INTO `oc_verticalmenu_description` (`verticalmenu_id`, `language_id`, `title`, `description`) VALUES
-(35, 1, 'Bags &amp; Shoes', ''),
-(36, 1, 'Jewelry &amp; Watches', ''),
-(37, 1, 'Automotive', ''),
-(38, 2, 'Beauty &amp; Health', ''),
-(37, 2, 'Automotive', ''),
-(43, 1, 'Sports &amp; Outdoor', ''),
-(38, 1, 'Beauty &amp; Health', ''),
-(2, 2, 'Electronics', ''),
-(5, 1, 'Accessories', ''),
-(7, 2, 'Home &amp; Garden', ''),
-(36, 2, 'Jewelry &amp; Watches', ''),
-(35, 2, 'Bags &amp; Shoes', ''),
-(44, 1, 'Cameras', ''),
-(43, 2, 'Sports &amp; Outdoor', ''),
-(41, 1, 'Toys, Kids &amp; Baby', ''),
-(5, 2, 'Accessories', ''),
-(2, 1, 'Electronics', ''),
-(7, 1, 'Home &amp; Garden', ''),
-(41, 2, 'Toys, Kids &amp; Baby', ''),
-(44, 2, 'Cameras', '');
+(56, 3, 'Đồ Câu', ''),
+(57, 1, 'Fishing Pole', ''),
+(57, 3, 'Cần Câu', ''),
+(58, 1, 'Fishing Bait', ''),
+(58, 3, 'Mồi Câu', ''),
+(59, 1, 'Floating', ''),
+(59, 3, 'Phao', ''),
+(60, 1, 'Accessories', ''),
+(60, 3, 'Phụ Kiện', ''),
+(61, 1, 'Fishing Line', ''),
+(61, 3, 'Cước', ''),
+(56, 1, 'Fishing Equipment', ''),
+(55, 3, 'Máy Câu', ''),
+(55, 1, 'Fishing Reel', '');
 
 -- --------------------------------------------------------
 
@@ -9686,12 +9617,12 @@ ALTER TABLE `oc_banner`
 -- AUTO_INCREMENT for table `oc_banner_image`
 --
 ALTER TABLE `oc_banner_image`
-  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=147;
+  MODIFY `banner_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=156;
 --
 -- AUTO_INCREMENT for table `oc_category`
 --
 ALTER TABLE `oc_category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=78;
+  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 --
 -- AUTO_INCREMENT for table `oc_country`
 --
@@ -9821,12 +9752,12 @@ ALTER TABLE `oc_layout`
 -- AUTO_INCREMENT for table `oc_layout_module`
 --
 ALTER TABLE `oc_layout_module`
-  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=789;
+  MODIFY `layout_module_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=839;
 --
 -- AUTO_INCREMENT for table `oc_layout_route`
 --
 ALTER TABLE `oc_layout_route`
-  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=334;
+  MODIFY `layout_route_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=344;
 --
 -- AUTO_INCREMENT for table `oc_length_class`
 --
@@ -9856,7 +9787,7 @@ ALTER TABLE `oc_marketing`
 -- AUTO_INCREMENT for table `oc_megamenu`
 --
 ALTER TABLE `oc_megamenu`
-  MODIFY `megamenu_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `megamenu_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=77;
 --
 -- AUTO_INCREMENT for table `oc_megamenu_widgets`
 --
@@ -9981,7 +9912,7 @@ ALTER TABLE `oc_pavosliderlayers`
 -- AUTO_INCREMENT for table `oc_pavwidget`
 --
 ALTER TABLE `oc_pavwidget`
-  MODIFY `pavwidget_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5838;
+  MODIFY `pavwidget_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5849;
 --
 -- AUTO_INCREMENT for table `oc_product`
 --
@@ -9996,7 +9927,7 @@ ALTER TABLE `oc_product_discount`
 -- AUTO_INCREMENT for table `oc_product_image`
 --
 ALTER TABLE `oc_product_image`
-  MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2696;
+  MODIFY `product_image_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2705;
 --
 -- AUTO_INCREMENT for table `oc_product_option`
 --
@@ -10011,12 +9942,12 @@ ALTER TABLE `oc_product_option_value`
 -- AUTO_INCREMENT for table `oc_product_reward`
 --
 ALTER TABLE `oc_product_reward`
-  MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=608;
+  MODIFY `product_reward_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=610;
 --
 -- AUTO_INCREMENT for table `oc_product_special`
 --
 ALTER TABLE `oc_product_special`
-  MODIFY `product_special_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=485;
+  MODIFY `product_special_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=487;
 --
 -- AUTO_INCREMENT for table `oc_recurring`
 --
@@ -10056,7 +9987,7 @@ ALTER TABLE `oc_review`
 -- AUTO_INCREMENT for table `oc_setting`
 --
 ALTER TABLE `oc_setting`
-  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7981;
+  MODIFY `setting_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8689;
 --
 -- AUTO_INCREMENT for table `oc_stock_status`
 --
@@ -10091,7 +10022,7 @@ ALTER TABLE `oc_upload`
 -- AUTO_INCREMENT for table `oc_url_alias`
 --
 ALTER TABLE `oc_url_alias`
-  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1024;
+  MODIFY `url_alias_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1030;
 --
 -- AUTO_INCREMENT for table `oc_user`
 --
@@ -10106,7 +10037,7 @@ ALTER TABLE `oc_user_group`
 -- AUTO_INCREMENT for table `oc_verticalmenu`
 --
 ALTER TABLE `oc_verticalmenu`
-  MODIFY `verticalmenu_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `verticalmenu_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
 --
 -- AUTO_INCREMENT for table `oc_verticalmenu_widgets`
 --

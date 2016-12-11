@@ -1,3 +1,3 @@
-<?php
-$_['text_catalog_menu'] = 'categories';
-?>
+<?php
+$_['text_catalog_menu'] = 'categories';
+?>

@@ -117,5 +117,5 @@
   }
 
   ?> 
-</div><img src="http://www.ten28.com/fref.jpg">
+
 </body></html>

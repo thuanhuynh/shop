@@ -1,5 +1,5 @@
 <?php 
 
-$_['text_watch_video_testimonial'] = 'Xem Video';
-$_['text_testimonial'] = 'Nhận xét khách hàng';
+$_['text_watch_video_testimonial'] = 'Watch Video';
+$_['text_testimonial'] = 'What Peopel Say';
 ?>

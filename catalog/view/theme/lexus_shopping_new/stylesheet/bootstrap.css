@@ -3412,8 +3412,8 @@ select[multiple].input-lg,
 
 .btn-success {
   color: #fff;
-  background-color: #70ba28;
-  border-color: #63a523;
+  background-color: #d80046;
+     border-color: #ff6b9b
 }
 .btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
   color: #fff;
@@ -3424,7 +3424,7 @@ select[multiple].input-lg,
   background-image: none;
 }
 .btn-success.disabled, .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success.disabled:active, .btn-success.disabled.active, .btn-success[disabled], .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, .btn-success[disabled]:active, .btn-success[disabled].active, fieldset[disabled] .btn-success, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus, fieldset[disabled] .btn-success:active, fieldset[disabled] .btn-success.active {
-  background-color: #70ba28;
+  background-color: #d80046;
   border-color: #63a523;
 }
 .btn-success .badge {
@@ -4938,7 +4938,7 @@ a.label:hover, a.label:focus {
 }
 
 .label-success {
-  background-color: #70ba28;
+  background-color: #d80046;
 }
 .label-success[href]:hover, .label-success[href]:focus {
   background-color: #57901f;
@@ -5218,7 +5218,7 @@ a.thumbnail.active {
 }
 
 .progress-bar-success {
-  background-color: #70ba28;
+  background-color: #d80046;
 }
 .progress-striped .progress-bar-success {
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);

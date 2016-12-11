@@ -157,11 +157,15 @@ class PtsWidgetListproduct_home1 extends PtsWidgetPageBuilder {
 			$categories = array();
 			foreach ($setting['links'] as $link) {
 				$category = $this->model_catalog_category->getCategory($link);
-				$categories[] = array(
-					'category_id' => $category['category_id'],
-					'name' => $category['name'],
-					'href' => $this->url->link('product/category', 'path=' . $category['category_id']),
-				);
+				//echo $category['category_id'];
+				//if(isset($category)){
+					$categories[] = array(
+						'category_id' => $category['category_id'],
+						'name' => $category['name'],
+						'href' => $this->url->link('product/category', 'path=' . $category['category_id']),
+					
+					);
+				
 			}
 			$setting['categories'] = $categories;
 
